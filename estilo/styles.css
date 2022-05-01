@@ -29,19 +29,22 @@ nav ul{
 nav ul li{
     list-style-type: none;
     display: inline-block;
-    border-radius: 100px;
+
+
 }
 nav ul li a{
-    text-decoration: none;
+    text-decoration: none; 
     color: #fff;
     padding: 20px;
+    border-radius: 100px;
 }
 
-nav ul li:hover{
+nav ul li a:hover{
     transition: 0.5s;
     background-color: rgba(255, 127, 80, 0.7);
     color:#000;
     font-weight: bold;
+    text-decoration: none; 
 }
 
 .btn{
