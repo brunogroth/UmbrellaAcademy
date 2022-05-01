@@ -6,7 +6,9 @@ body{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    color:#fff;
 }
+
 .wrapper{
     min-height: 30rem;
     background-repeat: no-repeat;
@@ -38,4 +40,9 @@ nav ul li:hover{
     color:#000;
     font-weight: bold;
     font-size: 1.2rem;
+}
+
+table, th, td{
+    border: 1px solid;
+    text-align: center;
 }
