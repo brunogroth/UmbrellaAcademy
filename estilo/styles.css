@@ -34,14 +34,22 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: #fff;
-    margin: 25px;
-
-
+    padding: 20px;
 }
+
 nav ul li:hover{
     transition: 0.5s;
     background-color: rgba(255, 127, 80, 0.7);
     color:#000;
     font-weight: bold;
-
 }
+
+.btn{
+    border: none;
+    border-radius: 5px;
+    padding: 8px 13px;
+    color: rgb(255, 255, 255);
+    background-color: orangered;
+    cursor: pointer;
+}
+
