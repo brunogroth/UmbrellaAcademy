@@ -2,7 +2,7 @@ body{
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(/img/alunos.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/alunos.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
