@@ -34,3 +34,13 @@ table, th, td{
     margin-left: auto;
     margin-right: auto;
 }
+
+.card-body{
+    background-color: rgb(41, 41, 41);
+}
+
+.card-body .btn:hover{
+
+    color:rgb(255, 255, 255);
+    background-color: rgb(247, 81, 63);
+}
