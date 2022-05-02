@@ -4,25 +4,23 @@
     overflow: hidden;
     margin-top: 2%;
 }
-.conteudo h1{
+.conteudo h1, nav h1{
     display: inline-block;
     padding: 1%;
-    background-color: rgba(0, 0, 0, 0.432);
-    line-height: 50px;
-    border-radius: 10px;
+    line-height: 50%;
+    margin-top: 1%;
+    color: orange;
 }
 
 .conteudo p{
     display: inline-block;
+    margin-top: 3%;
     padding: 1%;
-    background-color: rgba(0, 0, 0, 0.329);
-    border-radius: 10px;
-
+    margin: auto;
 }
 
 .conteudo2{
     display: inline-block;
-
     margin-top: 3%;
     margin-bottom: 2%;
 }
@@ -32,7 +30,7 @@
     border: none;
     border-radius: 5px;
     padding: 8px 13px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     background-color: orangered;
     cursor: pointer;
     margin: 10px;

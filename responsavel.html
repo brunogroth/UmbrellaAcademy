@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="estilo/styles.css">
     <link rel="stylesheet" href="estilo/styleresponsavel.css">
     <title>Escola</title>
@@ -15,26 +16,19 @@
                 <li><a href="#">HOME</a>
                 <li><a href="aluno.html">ALUNO</a>
                 <li><a href="responsavel.html">RESPONSAVEIS</a>
-                <li><a href="#">SECRETARIA</a>
+                <li><a href="secretaria.html">SECRETARIA</a>
                 <li><a href="#">FINANCEIRO</a>
             </ul>
-        </nav>
 
-        <div class="conteudo">
-            <h1>Bem-vindo ao Portal do Responsável</h1>
-            <p>
-                Aqui você pode matricular no ano letivo, atividades extras, acompanhar a vida escolar, 
-                como provas, notas, atividades extras e faltas, podendo acompanhar tudo sobre a vida escolar do seu filho.
-                <br>
-                Além do mais, poderá tambem receber boleto de pagamento no seu email e celular, 
-                enviar e receber mensagens da escola/professores e tambem consultar o material estudado por cada disciplina cursada.
-            </p>
-        </div>
+            <nav class="titulo">
+                <h1>Portal do Responsável</h1>
+            </nav>
+        </nav>
         <hr>
 
         <div class="conteudo">
 
-            <h2>O que deseja realizar?</h1>
+            <h2>Selecione uma opção:</h1>
                 
             <button class="btn ano_letivo">Matrícular em ano letivo</button>
             <button class="btn cad_atv_extra">Matrícular em atividades extras</button>
@@ -45,15 +39,36 @@
             <button class="btn contato">Entrar em contato</button>
             <button class="btn consulta_disc">Consultar disciplinas</button>
 
-           <table class="ano_letivo">
-               <td><h3>Matricular em novo ano letivo:</h3></td>
+            <div class="table_ano_letivo" hidden>
+                <table>
 
-               <tr><td></td></tr>
-           </table>
+                        <tr>
+                            <td><h3>Matricular em novo ano letivo:</h3></td>
+                        </tr>
+
+                        <tr>
+                            <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</td>
+                            <td>Em qual ano deseja matricular?</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <select name="" id="">
+                                    <option value="2023">2023</option>
+                                    <option value="2023">2024</option>
+                                    <option value="2023">2025</option>
+                                    <option value="2023">2026</option>
+                                </select>
+                            </td>   
+                        </tr>
+                </table>
+            </div>
         </div>
     </div>
     <footer>
         <p>Tópicos Especiais de Sistemas - UP 2022 - Grupo Umbrella</p>
     </footer>
 </body>
+
+<script src="javascript/responsavel.js"></script>
 </html>
