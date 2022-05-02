@@ -15,53 +15,67 @@
             <ul>
                 <li><a href="#">HOME</a>
                 <li><a href="aluno.html">ALUNO</a>
-                <li><a href="responsavel.html">RESPONSAVEIS</a>
+                <li><a class="active" href="responsavel.html">RESPONSAVEIS</a>
                 <li><a href="secretaria.html">SECRETARIA</a>
                 <li><a href="#">FINANCEIRO</a>
             </ul>
 
-            <nav class="titulo">
-                <h1>Portal do Responsável</h1>
-            </nav>
         </nav>
         <hr>
 
         <div class="conteudo">
+            <h1>Portal do Responsável</h1>
+
+            <br><br>
 
             <h2>Selecione uma opção:</h1>
                 
-            <button class="btn ano_letivo">Matrícular em ano letivo</button>
-            <button class="btn cad_atv_extra">Matrícular em atividades extras</button>
-            <button class="btn provas">Provas</button>
-            <button class="btn notas">Notas</button>
-            <button class="btn ver_atv_extra">Ver Atividades Extras</button>
-            <button class="btn faltas">Faltas</button>
-            <button class="btn contato">Entrar em contato</button>
-            <button class="btn consulta_disc">Consultar disciplinas</button>
+            <button class="btn" onclick="mudaTela(this)" value="ano_letivo">Matrícular em ano letivo</button>
+            <button class="btn" onclick="mudaTela(this)" value="cad_atv_extra">Matrícular em atividades extras</button>
+            <button class="btn" onclick="mudaTela(this)" value="provas">Provas</button>
+            <button class="btn" onclick="mudaTela(this)" value="notas">Notas</button>
+            <button class="btn" onclick="mudaTela(this)" value="ver_atv_extra">Ver Atividades Extras</button>
+            <button class="btn" onclick="mudaTela(this)" value="faltas">Faltas</button>
+            <button class="btn" onclick="mudaTela(this)" value="contato">Entrar em contato</button>
+            <button class="btn" onclick="mudaTela(this)" value="consulta_disc">Consultar disciplinas</button>
 
-            <div class="table_ano_letivo" hidden>
-                <table>
+            <div class="table ano_letivo"> <!-- terminar css -->
+                
+                <h3>Matricular novo ano letivo:</h3>
+                <p>Selecione um ano letivo das opções abaixo:</p><br>
+                <select name="" id="">
+                    <option value=""></option>
+                    <option value="2023">2023</option>
+                    <option value="2023">2024</option>
+                    <option value="2023">2025</option>
+                    <option value="2023">2026</option>
+                </select>
+                
+            </div>
 
-                        <tr>
-                            <td><h3>Matricular em novo ano letivo:</h3></td>
-                        </tr>
+            <div class="table cad_atv_extra"> <!-- terminar css -->
 
-                        <tr>
-                            <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</td>
-                            <td>Em qual ano deseja matricular?</td>
-                        </tr>
+                <h3>Matricular em atividades extras:</h3>
+                <p>Selecione uma disciplina abaixo:</p><br>
 
-                        <tr>
-                            <td>
-                                <select name="" id="">
-                                    <option value="2023">2023</option>
-                                    <option value="2023">2024</option>
-                                    <option value="2023">2025</option>
-                                    <option value="2023">2026</option>
-                                </select>
-                            </td>   
-                        </tr>
-                </table>
+                <select>
+                    <option value=""></option>
+                    <option value="2023">Português I</option>
+                    <option value="2023">Português II</option>
+                    <option value="2023">Português III</option>
+                    <option value="2023">Matemática I</option>
+                    <option value="2023">Matemática II</option>
+                    <option value="2023">Matemática III</option>
+                    <option value="2023">Física I</option>
+                    <option value="2023">Física II</option>
+                    <option value="2023">Física III</option>
+                </select>
+            </div>
+
+            <div class="table provas"><!-- terminar tudo -->
+               
+                <h3>Provas:</h3>
+                
             </div>
         </div>
     </div>
