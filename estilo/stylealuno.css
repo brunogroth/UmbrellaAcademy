@@ -44,3 +44,8 @@ table, th, td{
     color:rgb(255, 255, 255);
     background-color: rgb(247, 81, 63);
 }
+
+.conteudo2 .btn:hover{
+    color:rgb(255, 255, 255);
+    background-color: rgb(247, 81, 63);
+}
