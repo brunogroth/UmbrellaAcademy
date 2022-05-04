@@ -22,37 +22,39 @@
             </ul>
         </nav>
         <div class="container">
-            <h1>Bem vindo ao Fórum online!</h1>
+            <h1 class="mt-5">Bem vindo ao Fórum online!</h1>
             <p>Contato entre professor e aluno, de maneira rápida e eficiente.</p>
-            <div class="forum conteudo2 mb-5">
-                <div class="card w-75 row inicial">
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <div class="icone"><img src="img/conversando.png" height="30px"></div> <strong class="mx-3" > Umbrella's Bot</strong>
-                      </h5>
-                      <p class="card-text">Olá! Eu sou o Umbrella's Bot, o seu robô assistente.</p>
-                      <p class="card-text">Como posso te ajudar?</p>
+            <div class="conteudo2 mb-5">
+                <div class="forum" id="chat">
+                    <div class="card w-75 row inicial">
+                        <div class="card-body">
+                        <h5 class="card-title">
+                            <div class="icone"><img src="img/conversando.png" height="30px"></div> <strong class="mx-3" > Umbrella's Bot</strong>
+                        </h5>
+                        <p class="card-text">Olá! Eu sou o Umbrella's Bot, o seu robô assistente.</p>
+                        <p class="card-text">Como posso te ajudar?</p>
+                        </div>
+                    </div>
+                    <div class="card text-end mt-5 col align-self-end">
+                        <div class="card-body">
+                        <h5 class="card-title" id="titulo">
+                            <strong class="mx-3">Você</strong><div class="icone"><img src="img/icon-aluno.png" height="30px"></div>
+                        </h5>
+                        <p class="card-text">Olá!</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card text-end mt-5 col align-self-end">
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <strong class="mx-3">Você</strong><div class="icone"><img src="img/icon-aluno.png" height="30px"></div>
-                      </h5>
-                      <p class="card-text">Olá!</p>
-                    </div>
-                </div>
-                <div class="card text-end col mt-3">
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <strong class="mx-3">Você</strong><div class="icone"><img src="img/icon-aluno.png" height="30px"></div>
-                      </h5>
-                      <p class="card-text">'texto'</p>
+                <div class="row">
+                    <div class="col text-end mx-5 mt-4">
+                    <form>
+                        <textarea placeholder="Digite sua mensagem aqui..." id="textomsg" rows="3"  class="w-100" required></textarea> <button class="btn" id="enviarmsg">Enviar</button>
+                    </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="javascript/forum.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
