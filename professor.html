@@ -40,7 +40,7 @@
                 
                 
                 <button onclick="interacao();" class="btn" id="modal"  value="agenda">Agenda</button>
-                <button class="btn" onclick="mudaTela(this)" value="aprovacao">Aprovações</button>
+                <button onclick="relatorio();" class="btn" onclick="mudaTela(this)" value="aprovacao">Aprovações</button>
                 <button class="btn" onclick="mudaTela(this)" value="relatorio">Relatórios</button>
                 <button class="btn" onclick="mudaTela(this)" value="conteudos">Conteúdos</button>
                 <button class="btn" onclick="mudaTela(this)" value="chamada">Chamada</button>
@@ -56,7 +56,19 @@
                     <p>Aulas</p>
                     <p>Atividades Extras</p>
 
-                    <span class="close" id="fecharModal" onclick="fecharModal();">&times;</span>
+                    <span class="close" id="fecharModal" onclick="fecharagenda();">&times;</span>
+
+                </div>
+
+             </div>   
+
+             <div class="bg-modal" id="modalrelatorio">
+                <div class="modal">
+
+                    
+                    <p>segundo teste</p>
+
+                    <span class="close" id="fecharrelatorio" onclick="fecharModal();">&times;</span>
 
                 </div>
 

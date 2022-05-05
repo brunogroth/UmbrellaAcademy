@@ -33,7 +33,7 @@ body{
     color:rgb(0, 0, 0);
 }
 
-.bg-modal{
+.bg-modal {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.75);
@@ -48,7 +48,7 @@ body{
 
 }
 
-.modal{
+.modal {
     top: 0%;
     width: 50%;
     height: 60%;
@@ -62,12 +62,12 @@ body{
     
 }
 
-.modall span{
+.modal span{
     float: right;
-    font-size: 30px;
+    font-size: 60px;
     color: #000;
     margin: 20px 20px;
-    transition: 350ms;
+    transition: 3s;
     cursor: pointer;
 }
 
