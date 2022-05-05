@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo/styles.css">
+    <link rel="stylesheet" href="estilo/professor.css">
+
+ 
+    
+    <title>Escola</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a>
+                <li><a href="aluno.html">ALUNO</a>
+                <li><a class="active" href="responsavel.html">RESPONSAVEIS</a>
+                <li><a href="secretaria.html">SECRETARIA</a>
+                <li><a href="financeiro.html">FINANCEIRO</a>
+            </ul>
+
+        </nav>
+        <hr>
+
+        <div class="conteudo">
+            <h1>Portal do Professor</h1>
+
+            <p></p>
+
+            <br><br>
+
+            <h2>Selecione uma opção:</h1>
+
+              
+                
+                
+                <button onclick="interacao()" class="btn" id="modal"  value="agenda">Agenda</button>
+                <button class="btn" onclick="mudaTela(this)" value="aprovacao">Aprovações</button>
+                <button class="btn" onclick="mudaTela(this)" value="relatorio">Relatórios</button>
+                <button class="btn" onclick="mudaTela(this)" value="conteudos">Conteúdos</button>
+                <button class="btn" onclick="mudaTela(this)" value="chamada">Chamada</button>
+                <button class="btn" onclick="mudaTela(this)" value="notas">Notas</button>
+                <button class="btn" onclick="mudaTela(this)" value="ContatarAluno">Contatar Aluno</button>
+
+
+             <div class="bg-modal" id="idmodal">
+                <div class="modal">
+
+                    
+                    <p>Provas</p>
+                    <p>Aulas</p>
+                    <p>Atividades Extras</p>
+
+                    <span class="close" onclick="fecharModal">&times;</span>
+
+                </div>
+
+             </div>   
+
+             <h2>
+                 Selecione o aluno que deseja dar nota
+             </h2>
+
+             <select name="nota" id="notos">
+                 <option value=""></option>
+                <option value="">Rodrigo Azevedo</option>
+                <option value="">Bruno Miguel</option>
+             </select>
+
+             <h2>
+                Selecione o aluno que deseja dar nota
+            </h2>
+
+             <select name="nota" id="notas">
+                <option value=""></option>
+               <option value="">Rodrigo Azevedo</option>
+               <option value="">Bruno Miguel</option>
+            </select>
+
+             <script src="javascript/professor.js"></script>
+    
+
+
+                
