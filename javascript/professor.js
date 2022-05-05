@@ -2,7 +2,13 @@
 
 function interacao(){
    
-   document.getElementsById('idmodal').style.display= 'block';
+   document.getElementById('idmodal').style.display= 'block';
 }
+
+function fecharModal(){
+   
+   document.getElementById('idmodal').style.display= 'none';
+}
+
 
 

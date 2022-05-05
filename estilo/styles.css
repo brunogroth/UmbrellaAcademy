@@ -33,3 +33,45 @@ body{
     color:rgb(0, 0, 0);
 }
 
+.bg-modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    z-index: 100;
+    top: 0%;
+    right: 0;
+    display: none;
+    transition: 350ms;
+    color: #000;
+
+
+}
+
+.modal{
+    top: 0%;
+    width: 50%;
+    height: 60%;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 80px auto 0 auto;
+    transition: 3s;
+    display: flex;
+    
+    
+}
+
+.modall span{
+    float: right;
+    font-size: 30px;
+    color: #000;
+    margin: 20px 20px;
+    transition: 350ms;
+    cursor: pointer;
+}
+
+.modal span:hover{
+    color: red;
+    transition: 350ms;
+}
