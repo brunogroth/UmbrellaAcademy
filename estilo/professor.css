@@ -63,6 +63,23 @@ footer{
     color: rgb(255, 145, 0);
 }
 
+.btn-rel{
+    height: 10%;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 13px;
+    color: #fff;
+    background-color: rgb(13, 182, 13);
+    cursor: pointer;
+    margin: 10px;
+}
+
+.tabela-chamada{
+    align-items: center;
+    text-align: center;
+}
+
+
 /* MOdal 
 
 
