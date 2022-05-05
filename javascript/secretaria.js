@@ -4,11 +4,7 @@ function preparar() {
 
     var paragrafo  = document.getElementById("paragrafo").innerHTML;
 
-    window.alert('Olá ' + prep + ', é um prazer te ver!');
-
-    //paragrafo = paragrafo +"<p>"+prep+"</p>";
-
-
+    window.alert('A mensagem a ser enviada para todos os pais por e-mail e SMS será: ' + prep );
 
     document.getElementById("paragrafo").innerHTML = paragrafo;
 
@@ -16,7 +12,7 @@ function preparar() {
 
 var select = document.querySelector('select');
 
-var para = document.querySelector('p');
+var para = document.querySelector('h4');
 
 
 select.addEventListener('change', obterClima);
@@ -27,21 +23,21 @@ function obterClima() {
     var opcao = select.value;
 
 
-    if (opcao === 'sol') {
+    if (opcao === 'joania') {
 
-        para.textContent = 'Está quente e ensolarado hoje. Use short e camiseta! Vá a praia ou ao parque e tome uma cerveja!';
+        para.textContent = 'Gostaria de marcar uma reunião com a professora Marcia de Historia';
 
-    } else if (opcao === 'chuva') {
+    } else if (opcao === 'marcos') {
 
-        para.textContent = 'Está chovendo muito hoje!. Fique em casa, escolha um bom filme ou estude javascript! Ah, não esqueça da pipoca.';
+        para.textContent = 'Preciso do Historico do ano passado do meu filho João Felipe';
 
-    } else if (opcao === 'neve') {
+    } else if (opcao === 'lara') {
 
-        para.textContent = 'E não é que está nevando em Curitiba? Aproveite essa raridade, tire fotos e deixe sua roupa ficar branquinha. Ninguem sabe quando isso vai ocorrer novamente!';
+        para.textContent = 'Gostaria de saber qual o cronograma de aulas do meu filho';
 
-    } else if (opcao === 'ameno') {
+    } else if (opcao === 'marcio') {
 
-        para.textContent = 'Hoje não está nem quente e nem frio! É aquele dia típico de outono, com céu azul e clima agradável! Vá jogar frescobol no parque, é uma boa pedida!';
+        para.textContent = 'Gostaria de receber o controle de faltas do meu filho';
 
     } else {
 
