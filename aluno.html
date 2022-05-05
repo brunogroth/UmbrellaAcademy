@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,22 +11,48 @@
 </head>
 <body>
     <div class="wrapper">
-        <nav>
-            <ul>
-                <li><a href="index.html">HOME</a>
-                <li><a href="aluno.html">ALUNO</a>
-                <li><a href="responsavel.html">RESPONSAVEIS</a>
-                <li><a href="secretaria.html">SECRETARIA</a>
-                <li><a href="financeiro.html">FINANCEIRO</a>
-                <li><a href="forum.html">CHAT</a>
-            </ul>
-        </nav>
+      <nav class="navbar navbar-expand-lg navbar-light bg-backgmenu">
+        <a class="navbar-brand" href="index.html"><img src="img/umbrella.png" width="30px"> Umbrella's Institute</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aluno.html">Portal do Aluno<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="responsavel.html">Portal dos Responsáveis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="professor.html">Portal do Professor</a>
+            </li>            
+            <li class="nav-item">
+              <a class="nav-link" href="secretaria.html">Portal da Secretaria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="financeiro.html">Portal do Financeiro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="forum.html">Chat</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
 
         <div class="conteudo">
           <h1>Bem vindo ao Portal do Aluno!</h1>
           <p>Por aqui você pode consultar sua agenda com as aulas e matérias da semana, verificar provas e atividades extras.</p>
           <div class="conteudo2 mb-5">
-            <h2 class="text-center bold"><strong>Calendário Escolar</strong></h1>
+            <h2 class="text-center bold"><strong>Calendário Escolar</strong></h2>
               <table class="table" id="table">
                 <tr>
                   <th>  </th>
@@ -66,7 +92,7 @@
     </div>
         <div class="conteudo mt-5">
             <h2>Matrícula em Atividades Extras:</h2>
-                <p>Informe o nome da matéria e o dia da semana desejado para realizar. A matéria será incluída no calendário acima.</p>
+                <p>Informe o nome da Atividade Extra e o dia da semana desejado para realizar. A Atividade Extra será incluída no calendário acima.</p>
             <div class="conteudo2">
                     <label class="form-label my-3">Atividade Extra: </label><input type="text" class="form-control" id="atv-extra" placeholder="Nome da Atividade">
                     <p><label class="form-label my-3">Data: </label>
