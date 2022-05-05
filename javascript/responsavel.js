@@ -9,8 +9,6 @@ let actions = [
         'consulta_disc',
 ];
 
-console.log(actions);
-
 function mudaTela(value){
 
     actions.forEach((nome_action, indice) => {
