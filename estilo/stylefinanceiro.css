@@ -80,6 +80,6 @@ td[data-href]{
 td[data-href]:hover{
     color: rgba(255, 127, 80, 0.7);
 }
-#editFinanceiro{
+#exportFinanceiro{
     margin-right: 50px;
 }
