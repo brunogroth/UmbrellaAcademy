@@ -15,7 +15,7 @@
     padding: 5px;
     line-height: 50px;
     border-radius: 10px;
-    background-color: rgba(255, 94, 0, 0.884);
+    /* background-color: rgba(255, 94, 0, 0.884); */
 }
 
 .hidden {
@@ -25,16 +25,24 @@
     display: block;
 }
 
-.conteudo p{
+/* .conteudo p{  //não está sendo usado
     display: inline-block;
     margin-top: 3%;
     padding: 1%;
     margin: auto;
-}
+} */
 
 .conteudo .table{
+    text-align: center;
     display: none;
     background-color: rgba(0, 0, 0, 0.767);
+}
+
+table, th, td{
+    border: 1px solid;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .btn{
@@ -43,15 +51,15 @@
     border-radius: 5px;
     padding: 8px 13px;
     color: rgb(255, 255, 255);
-    background-color: rgba(255, 94, 0, 0.884);
+    background-color: rgb(255, 81, 0);
     cursor: pointer;
     margin: 10px;
 }
 
-.table{
+/* .table{
     border-radius: 5px;
     background-color: rgba(202, 187, 187, 0.514);
-}
+} */
 
 footer{
     background-color: #333;
