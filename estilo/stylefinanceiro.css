@@ -53,6 +53,14 @@ nav ul li a:hover{
     padding: 8px 13px;
     cursor: pointer;
     text-align: center;
+    transition: 0.5s;
+    background-color: rgba(255, 127, 80, 0.7);
+    color:#000;
+    font-weight: bold;
+    text-decoration: none; 
+}
+.btn:hover{
+    color: #fff;
 }
 footer{
     background-color: #333;
@@ -71,4 +79,7 @@ td[data-href]{
 }
 td[data-href]:hover{
     color: rgba(255, 127, 80, 0.7);
+}
+#exportFinanceiro{
+    margin-right: 50px;
 }
