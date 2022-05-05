@@ -1,33 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="estilo/styles.css">
     <link rel="stylesheet" href="estilo/professor.css">
 
- 
-    
+
+
     <title>Escola</title>
 </head>
+
 <body>
     <div class="wrapper">
-        <nav>
-            <ul>
-                <li><a href="#">HOME</a>
-                <li><a href="aluno.html">ALUNO</a>
-                <li><a class="active" href="responsavel.html">RESPONSAVEIS</a>
-                <li><a href="secretaria.html">SECRETARIA</a>
-                <li><a href="financeiro.html">FINANCEIRO</a>
-            </ul>
-
-        </nav> 
+        <nav class="navbar navbar-expand-lg navbar-light bg-backgmenu">
+            <a class="navbar-brand" href="index.html"><img src="img/umbrella.png" width="30px"> Umbrella's Institute</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="aluno.html">Portal do Aluno<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="responsavel.html">Portal dos Responsáveis</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="professor.html">Portal do Professor</a>
+                </li>            
+                <li class="nav-item">
+                  <a class="nav-link" href="secretaria.html">Portal da Secretaria</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="financeiro.html">Portal do Financeiro</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="forum.html">Chat</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
         <hr>
-
-        
 
         <div class="conteudo">
             <h1>Portal do Professor</h1>
@@ -37,11 +64,11 @@
             <br><br>
 
             <h2>Selecione uma opção:</h1>
-                    
-                <button onclick="interacao();" class="btn" id="modal"  value="agenda">Agenda</button>
+
+                <button onclick="interacao();" class="btn" id="modal" value="agenda">Agenda</button>
                 <button class="btn" value="aprovacao">Aprovações</button>
-                <button onclick="relatorio();" class="btn"  value="relatorio">Relatórios</button>
-                <button onclick="conteudo();"class="btn" value="conteudos">Conteúdos</button>
+                <button onclick="relatorio();" class="btn" value="relatorio">Relatórios</button>
+                <button onclick="conteudo();" class="btn" value="conteudos">Conteúdos</button>
                 <button ondblclick="chamada();" class="btn" value="chamada">Chamada</button>
                 <button class="btn" onclick="mudaTela(this)" value="notas">Notas</button>
                 <button class="btn" onclick="mudaTela(this)" value="ContatarAluno">Contatar Aluno</button>
@@ -49,179 +76,173 @@
 
                 <div class="bg-modal" id="modalchamada">
                     <div class="modal">
-                 
-                <table class="tabela-chamada">
 
-                    <tr>
-                        <td>Nome</td>
-                        <td>Aula 1</td>
-                        <td>Aula 2</td>
-                    </tr> 
+                        <table class="tabela-chamada">
 
-                    <tr>
-                        <td> Bruno Miguel</td>
-                        <td> <input type="checkbox"></td>
-                        <td> <input type="checkbox"></td>
-                    </tr>
+                            <tr>
+                                <td>Nome</td>
+                                <td>Aula 1</td>
+                                <td>Aula 2</td>
+                            </tr>
 
-                    <tr>
-                        <td> Eduardo Amorin</td>
-                        <td> <input type="checkbox"></td>
-                        <td> <input type="checkbox"></td>
-                    </tr>
+                            <tr>
+                                <td> Bruno Miguel</td>
+                                <td> <input type="checkbox"></td>
+                                <td> <input type="checkbox"></td>
+                            </tr>
 
-                    <tr>
-                        <td> Gabriel Cardon</td>
-                        <td> <input type="checkbox"></td>
-                        <td> <input type="checkbox"></td>
-                    </tr>
+                            <tr>
+                                <td> Eduardo Amorin</td>
+                                <td> <input type="checkbox"></td>
+                                <td> <input type="checkbox"></td>
+                            </tr>
 
-                    <tr>
-                        <td> Lucas Soares</td>
-                        <td> <input type="checkbox"></td>
-                        <td> <input type="checkbox"></td>
-                    </tr>
+                            <tr>
+                                <td> Gabriel Cardon</td>
+                                <td> <input type="checkbox"></td>
+                                <td> <input type="checkbox"></td>
+                            </tr>
 
-
-                    <tr>
-                        <td> Rodrigo Azevedo</td>
-                        <td> <input type="checkbox"></td>
-                        <td> <input type="checkbox"></td>
-                    </tr>
-
-    
-                    
-                </table>
-
-                <span class="close" id="fecharModal" onclick="fecharchamada();">&times;</span>
-
-            </div>
-    
-        </div>  
-        
+                            <tr>
+                                <td> Lucas Soares</td>
+                                <td> <input type="checkbox"></td>
+                                <td> <input type="checkbox"></td>
+                            </tr>
 
 
-             <div class="bg-modal" id="idmodal">
-                <div class="modal">
+                            <tr>
+                                <td> Rodrigo Azevedo</td>
+                                <td> <input type="checkbox"></td>
+                                <td> <input type="checkbox"></td>
+                            </tr>
 
-                    
-                    <p>Provas</p>
-                    <p>Aulas</p>
-                    <p>Atividades Extras</p>
 
-                    <span class="close" id="fecharModal" onclick="fecharagenda();">&times;</span>
+
+                        </table>
+
+                        <span class="close" id="fecharModal" onclick="fecharchamada();">&times;</span>
+
+                    </div>
 
                 </div>
 
-             </div>  
-             
-        
-          
 
-             <div class="bg-modal" id="modalrelatorio">
-                <div class="modal">
 
-                    
-                    <p>
+                <div class="bg-modal" id="idmodal">
+                    <div class="modal">
+
+
+                        <p>Provas</p>
+                        <p>Aulas</p>
+                        <p>Atividades Extras</p>
+
+                        <span class="close" id="fecharModal" onclick="fecharagenda();">&times;</span>
+
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="bg-modal" id="modalrelatorio">
+                    <div class="modal">
+
+
+                        <p>
                         <form action="#" class="form-prof">
                             <h2>Enviar para Aluno:</h2>
-                            <select > 
-                                <option ></option>
-                                <option >Aluno</option>     
-                                <option >Grupo</option>
-                            </select> <br> 
+                            <select>
+                                <option></option>
+                                <option>Aluno</option>
+                                <option>Grupo</option>
+                            </select> <br>
 
                             <h2>Enviar para Grupo/Sala:</h2>
-                            <select > 
-                                <option ></option>
-                                <option >Ads</option>     
-                                <option >Bsi</option>
-                            </select> <br> 
+                            <select>
+                                <option></option>
+                                <option>Ads</option>
+                                <option>Bsi</option>
+                            </select> <br>
 
-                            <textarea placeholder="Escrever relatório..." name="" id="" cols="50" rows="10"></textarea> <br>
+                            <textarea placeholder="Escrever relatório..." name="" id="" cols="50" rows="10"></textarea>
+                            <br>
 
                             <button onclick="alerta()" id="rel" class="btn-rel">Enviar relatório</button>
-                            </form>
+                        </form>
                         </p>
-                        
-                        
-                    
 
-                   
 
-                    <span class="close" id="fecharrelatorio" onclick="fecharrelatorio();">&times;</span>
+
+
+
+
+                        <span class="close" id="fecharrelatorio" onclick="fecharrelatorio();">&times;</span>
+
+                    </div>
 
                 </div>
 
-             </div>  
+                <div class="bg-modal" id="modalconteudo">
+                    <div class="modal">
 
-             <div class="bg-modal" id="modalconteudo">
-                <div class="modal">
 
-                    
-                    <p>
-                        <form action="professor.html" class="form-prof"  id="meuUp">
+                        <p>
+                        <form action="professor.html" class="form-prof" id="meuUp">
                             <h2>Enviar para Aluno:</h2>
-                            <select > 
-                                <option ></option>
-                                <option >Aluno</option>     
-                                <option >Grupo</option>
-                            </select> <br> 
+                            <select>
+                                <option></option>
+                                <option>Aluno</option>
+                                <option>Grupo</option>
+                            </select> <br>
 
                             <h2>Enviar para Grupo/Sala:</h2>
-                            <select > 
-                                <option ></option>
-                                <option >Ads</option>     
-                                <option >Bsi</option>
-                            </select> <br>  <br>
-                        
+                            <select>
+                                <option></option>
+                                <option>Ads</option>
+                                <option>Bsi</option>
+                            </select> <br> <br>
+
                             <input type="file"> <br>
-                            <button onclick="alerta()" id="material" type="submit" class="btn-rel">Enviar conteudo</button>
-                            </form>
+                            <button onclick="alerta()" id="material" type="submit" class="btn-rel">Enviar
+                                conteudo</button>
+                        </form>
                         </p>
-                        
-                        
-                    
 
-                   
 
-                    <span class="close" id="fecharconteudo" onclick="fecharconteudo();">&times;</span>
+
+
+
+
+                        <span class="close" id="fecharconteudo" onclick="fecharconteudo();">&times;</span>
+
+                    </div>
 
                 </div>
 
-             </div>  
 
 
 
-             
-             
 
 
-             <script src="javascript/professor.js"></script>
 
-             <script>
-                 
+                <script src="javascript/professor.js"></script>
+<script>
+
 cont meuUp = document.getElementById('meuUp');
-cont inpFile= document.getElementById('inpFile')
+cont inpFile = document.getElementById('inpFile')
 
-meuUp.addEventListener("submit" , e => {
-   e.preventDdefault();
+                    meuUp.addEventListener("submit", e => {
+            e.preventDdefault();
 
-   const edpoint = "upload.php"
-   const formData = new FormData();
+                        const edpoint = "upload.php"
+                        const formData = new FormData();
 
-   formData.append("inpFile", inpFile.file[0]);
+                        formData.append("inpFile", inpFile.file[0]);
 
-   fetch(endpoint,{
-      method:"post",
-      body: formData
-   });
-
-});
-
-
-             </script>
-    
-
-
-                
+                        fetch(endpoint, {
+                            method: "post",
+                            body: formData
+            });
+        });
+</script>
