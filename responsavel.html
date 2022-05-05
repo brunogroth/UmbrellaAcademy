@@ -66,7 +66,7 @@
             <button class="btn" onclick="mudaTela(this)" value="provas">Provas</button>
             <button class="btn" onclick="mudaTela(this)" value="notas">Notas</button>
             <button class="btn" onclick="mudaTela(this)" value="ver_atv_extra">Ver Atividades Extras</button>
-            <button class="btn" onclick="mudaTela(this)" value="faltas">Faltas</button>
+            <button class="btn" onclick="mudaTela(this)" value="faltas">Frequencia</button>
             <button class="btn" onclick="mudaTela(this)" value="contato">Entrar em contato</button>
             <button class="btn" onclick="mudaTela(this)" value="consulta_disc">Consultar disciplinas</button>
 
@@ -91,7 +91,7 @@
                   </select>
                   <br>
 
-                  <button>Enviar</button>
+                  <button class="btn">Enviar</button>
             </div>
 
             <div class="table cad_atv_extra" id="cad_atv_extra"> <!-- terminar css -->
@@ -101,21 +101,25 @@
 
                 <select>
                     <option value=""></option>
-                    <option value="2023">Português I</option>
-                    <option value="2023">Português II</option>
-                    <option value="2023">Português III</option>
+                    <option value="2023">Dramat. I</option>
+                    <option value="2023">Dramat. II</option>
+                    <option value="2023">Dramat. III</option>
                     <option value=""></option>
-                    <option value="2023">Matemática I</option>
-                    <option value="2023">Matemática II</option>
-                    <option value="2023">Matemática III</option>
+                    <option value="2023">História do Teatro</option>
                     <option value=""></option>
-                    <option value="2023">Física I</option>
-                    <option value="2023">Física II</option>
-                    <option value="2023">Física III</option>
+                    <option value="2023">Encenação I</option>
+                    <option value="2023">Encenação II</option>
+                    <option value="2023">Encenação III</option>
+                    <option value=""></option>
+                    <option value="2023">Cenografia  I</option>
+                    <option value="2023">Cenografia  I</option>
+                    <option value="2023">Cenografia  I</option>
+                    <option value=""></option>
+                    <option value="">Comunic. e Expres</option>
                 </select>
                 <br>
 
-                <button>Enviar</button>
+                <button class="btn">Enviar</button>
             </div>
 
             <div class="table" id="provas"><!-- terminar tudo -->
@@ -161,6 +165,24 @@
             <div class="table" id="notas">
 
                 <h3>Notas:</h3>
+                <table id="nota">
+                  <tr>
+                      <th>Nome dos alunos:</th>
+                      <th>Dramat. II</th>
+                      <th>História do Teatro</th>
+                      <th>Encenação I</th>
+                      <th>Cenografia II</th>
+                      <th>Comunic. e Expres.</th>
+                  </tr>
+                  <tr>
+                      <td>Gabriel Cardon</td>
+                      <td>0,0</td>
+                      <td>0,0</td>
+                      <td>0,0</td>
+                      <td>0,0</td>
+                      <td>0,0</td>
+                  </tr>
+              </table>
             </div>
 
             <div class="table" id="ver_atv_extra">
@@ -170,12 +192,34 @@
 
             <div class="table" id="faltas">
 
-                <h3>Visualizar faltas:</h3>
+                <h3>Visualizar frequencia:</h3>
+                <table id="nota">
+                  <tr>
+                      <th>Nome dos alunos:</th>
+                      <th>Dramat. II</th>
+                      <th>História do Teatro</th>
+                      <th>Encenação I</th>
+                      <th>Cenografia II</th>
+                      <th>Comunic. e Expres.</th>
+                  </tr>
+                  <tr>
+                      <td>Gabriel Cardon</td>
+                      <td>80,0%</td>
+                      <td>90,0%</td>
+                      <td>75,0%</td>
+                      <td>88,0%</td>
+                      <td>91,0%</td>
+                  </tr>
+              </table>
             </div>
 
             <div class="table" id="contato">
 
                 <h3>Entrar em contato com a escola:</h3>
+
+                <p>Escolha uma opção para entrar em contato com o professor ou coordenador</p>
+                <a href="mailto:professores@umbrellainstitute.com?subject="link HTML"><button class="btn">Professor</button></a>
+                <a href="mailto:coordenacao@umbrellainstitute.com?subject="link HTML"><button class="btn">Coodenação</button></a>
             </div>
 
             <div class="table" id="consulta_disc">

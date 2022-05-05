@@ -38,11 +38,21 @@
     background-color: rgba(0, 0, 0, 0.767);
 }
 
+a, a:hover{
+    text-decoration: none;
+    color: white;
+}
+
 table, th, td{
     border: 1px solid;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+select{
+    width: auto;
+    border-radius: 10px;
 }
 
 .btn{
