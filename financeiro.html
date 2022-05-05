@@ -22,7 +22,7 @@
 <br><br>
         <div class="table-responsive-sm">
             <h2 class="text-center">TABELA FINANCEIRO<br><br>
-                <table class="table table-sm table-dark">
+                <table id="tableFinanceiro" class="table table-sm table-dark">
                     <thead>
                       <tr>
                         <th scope="col">#</th>
@@ -74,10 +74,17 @@
                         <td>100R$</td>
                         <td data-href="#">Emitir Boleto</td>
                       </tr>
+
                     </tbody>
+                    <script src="table2excel.js"></script>
                   </table>
         </div>
         <hr color="white">
+        </div>
+        <div class="btn-group float-right">
+          <button button class= "btn float-right"id="exportFinanceiro">EXPORTAR TABELA</button>
+          <button button class="btn float-right" id="addFinanceiro">ADICIONAR ALUNO</button>
+          <button button class="btn float-right" id="editFinanceiro">EDITAR ALUNO</button>
         </div>
         <footer class="footer navbar-fixed-bottom">Tópicos Especiais de Sistemas - UP 2022 - Grupo  Umbrella
         </footer>
@@ -94,6 +101,12 @@
             });
         });
     });
+</script>
+<script>
+        document.getElementById('exportFinanceiro').addEventListener('click', function (){
+          var table2excel = new Table2Excel();
+            table2excel.export(document.querySelectorAll("#tableFinanceiro"));
+         });
 </script>
 </body>
 </html>
