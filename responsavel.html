@@ -20,14 +20,14 @@
               
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
+                    <li>
                       <a class="nav-link" href="index.html">Home </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="aluno.html">Portal do Aluno<span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="aluno.html">Portal do Aluno</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" href="responsavel.html">Portal dos Responsáveis</a>
+                      <a class="nav-link active" href="responsavel.html">Portal dos Responsáveis<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="professor.html">Portal do Professor</a>
@@ -70,23 +70,22 @@
             <button class="btn" onclick="mudaTela(this)" value="contato">Entrar em contato</button>
             <button class="btn" onclick="mudaTela(this)" value="consulta_disc">Consultar disciplinas</button>
 
-            <div class="table ano_letivo"> <!-- terminar css -->
-                
-                <h3>Matricular novo ano letivo:</h3>
-                <label>Selecione um ano letivo das opções abaixo:</label> <br>
-                <select name="" id="">
-                    <option value=""></option>
-                    <option value="2023">2023</option>
-                    <option value="2023">2024</option>
-                    <option value="2023">2025</option>
-                    <option value="2023">2026</option>
-                </select>
-                <br>
-                <button>Enviar</button>
-                
+            <div class="table ano_letivo" id="ano_letivo">
+
+              <h3>Matricular novo ano letivo:</h3>
+                  <label>Selecione um ano letivo das opções abaixo:</label> <br>
+                  <select name="" id="">
+                      <option value=""></option>
+                      <option value="2023">2023</option>
+                      <option value="2023">2024</option>
+                      <option value="2023">2025</option>
+                      <option value="2023">2026</option>
+                  </select>
+                  <br>
+                  <button>Enviar</button>
             </div>
 
-            <div class="table cad_atv_extra"> <!-- terminar css -->
+            <div class="table cad_atv_extra" id="cad_atv_extra"> <!-- terminar css -->
 
                 <h3>Matricular em atividades extras:</h3>
                 <label>Selecione uma disciplina abaixo</label><br>
@@ -108,33 +107,33 @@
                 <button>Enviar</button>
             </div>
 
-            <div class="table provas"><!-- terminar tudo -->
+            <div class="table" id="provas"><!-- terminar tudo -->
                
                 <h3>Provas:</h3>
                 
             </div>
 
-            <div class="table notas">
+            <div class="table" id="notas">
 
                 <h3>Notas:</h3>
             </div>
 
-            <div class="table ver_atv_extra">
+            <div class="table" id="ver_atv_extra">
 
                 <h3>Visualizar atividades extras:</h3>
             </div>
 
-            <div class="table faltas">
+            <div class="table" id="faltas">
 
                 <h3>Visualizar faltas:</h3>
             </div>
 
-            <div class="table contato">
+            <div class="table" id="contato">
 
                 <h3>Entrar em contato com a escola:</h3>
             </div>
 
-            <div class="table consulta_disc">
+            <div class="table" id="consulta_disc">
 
                 <h3>Consultar disciplinas:</h3>
             </div>

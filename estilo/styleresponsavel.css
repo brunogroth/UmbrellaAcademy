@@ -1,5 +1,6 @@
 .active{
-    background-color: orangered;
+    background-color: rgba(255, 94, 0, 0.884);
+    border-radius: 10px;
 }
 
 .conteudo{
@@ -8,20 +9,20 @@
     overflow: hidden;
     margin-top: 2%;
 }
-/* .conteudo h1, nav h1{
-    display: inline-block;
-    padding: 1%;
-    line-height: 50%;
-    margin-top: 1%;
-    color: orangered;
-} */
 
 .conteudo h1{
     display: inline;
     padding: 5px;
     line-height: 50px;
     border-radius: 10px;
-    background-color: orangered;
+    background-color: rgba(255, 94, 0, 0.884);
+}
+
+.hidden {
+    display: none;
+}
+.visible {
+    display: block;
 }
 
 .conteudo p{
@@ -32,6 +33,7 @@
 }
 
 .conteudo .table{
+    display: none;
     background-color: rgba(0, 0, 0, 0.767);
 }
 
@@ -41,7 +43,7 @@
     border-radius: 5px;
     padding: 8px 13px;
     color: rgb(255, 255, 255);
-    background-color: orangered;
+    background-color: rgba(255, 94, 0, 0.884);
     cursor: pointer;
     margin: 10px;
 }
