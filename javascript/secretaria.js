@@ -2,11 +2,7 @@ function preparar() {
 
     var prep = document.getElementById("preparo").value;
 
-    var paragrafo  = document.getElementById("paragrafo").innerHTML;
-
     window.alert('A mensagem a ser enviada para todos os pais por e-mail e SMS será: ' + prep );
-
-    document.getElementById("paragrafo").innerHTML = paragrafo;
 
 }
 
