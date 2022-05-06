@@ -62,11 +62,13 @@ body{
     
 }
 
+
 .modal span{
     float: right;
     font-size: 60px;
     color: #000;
-    margin: 20px 20px;
+    margin-top: 1%;
+    margin-left: 30%;
     transition: 3s;
     cursor: pointer;
 }
@@ -74,4 +76,9 @@ body{
 .modal span:hover{
     color: red;
     transition: 350ms;
+}
+
+.xbotao{
+    position: absolute;
+
 }

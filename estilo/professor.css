@@ -51,6 +51,21 @@
     background-color: rgba(202, 187, 187, 0.514);
 }
 
+.alerta{
+    color: rgba(223, 223, 0, 0.973);
+  
+    
+}
+
+#nao{
+    color: red;
+
+}
+
+#sim{
+    color: rgb(72, 255, 0);
+}
+
 footer{
     background-color: #333;
     color:#fff;
@@ -61,6 +76,10 @@ footer{
     bottom: 0; 
     width: 100%;
     color: rgb(255, 145, 0);
+}
+
+#enter{
+    margin-left: 10px;
 }
 
 .btn-rel{
@@ -83,8 +102,10 @@ footer{
 
 
 .cont-rel {
-    text-align: center;
-    margin-left: 20%;
+    
+    padding: 20px;
+    align-content: center;
+    margin-left: 5px;
     
 }
 
@@ -93,6 +114,7 @@ footer{
     padding: 5px;
     border-radius: 5px;
 }
+
 
 textarea{
     border-radius: 5px;
@@ -104,10 +126,20 @@ textarea{
 }
 
 .conteudo-agenda{
-    display: block;
-    margin-left: 15%;
+    
+    padding: 10px;
+    border-radius: 20px;
+    margin: 5px;
 
     
+}
+
+
+.conteudo-agenda select {
+    padding: 10px;
+    border-radius: 20px;
+    
+    margin: 5px;
 }
 
 .tabela-chamada{
@@ -116,77 +148,10 @@ textarea{
     
 }
 
+
+
 #table{
-    background-color: #fff !important;
+    background-color: rgb(255, 255, 255) !important;
     size: auto;
-}
-
-/*
-
-.conteudo-modal h2{
-    text-align: center;
-   
-
-}
-.conteudo-modal{
-    margin-left: 10px;
-    text-align: center;
-    align-items: center;
-}
-
-.conteudo-agenda{
-    margin: auto;
-  
-}
-
-.conteudo-agenda h2{
-    text-align: center;
-    font-size: 30px;
-}
-
-
-/* MOdal 
-
-
-
-.bg-modal{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.75);
-    position: fixed;
-    z-index: 100;
-    top: 0%;
-    right: 0;
-    display: none;
-    transition: 350ms;
-    color: #000;
-
-
-}
-
-.modall{
-    top: 0%;
-    width: 50%;
-    height: 60%;
-    background-color: #fff;
-    border: 1px solid #000;
-    border-radius: 5px;
-    margin: 80px auto 0 auto;
-    display: flex;
-    
-    
-}
-
-.modall span{
-    float: right;
-    font-size: 30px;
-    color: #000;
-    margin: 20px 20px;
-    transition: 350ms;
-    cursor: pointer;
-}
-
-.modal span:hover{
-    color: red;
-    transition: 350ms;
+    padding: 50px;
 }

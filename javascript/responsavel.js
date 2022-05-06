@@ -1,14 +1,10 @@
-let actions = [
-        'ano_letivo',
-        'cad_atv_extra',
-        'provas',
-        'notas',
-        'ver_atv_extra',
-        'faltas',
-        'contato',
-        'consulta_disc',
-];
 
+// array com os nomes dos botões, em que as tabelas contem o mesmo nome
+let actions = ['ano_letivo', 'cad_atv_extra', 'provas', 'notas', 'faltas', 'contato', 'consulta_disc'];
+
+// função em que vai receber o valor do botão, verificar se uma table com o mesmo nome, ele vai dar block no display, se não, vai dar '',
+// block = visible
+// ''    = hide
 function mudaTela(value){
 
     actions.forEach((nome_action, indice) => {

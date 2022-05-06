@@ -33,6 +33,7 @@
 } */
 
 .conteudo .table{
+    padding: 50px;
     text-align: center;
     display: none;
     background-color: rgba(0, 0, 0, 0.767);
@@ -75,10 +76,11 @@ footer{
     background-color: #333;
     color:#fff;
     text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
     padding: 0.4rem;
-    margin-top: 4%;
-    position: absolute;
-    bottom: 0; 
+    bottom: 8; 
     width: 100%;
     color: rgb(255, 145, 0);
 }
