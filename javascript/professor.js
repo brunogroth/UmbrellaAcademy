@@ -41,21 +41,34 @@ function fecharchamada(){
    document.getElementById('modalchamada').style.display= 'none';
 };
 
+function nota(){
+   
+   document.getElementById('modalnota').style.display= 'block';
+}
+
+function fecharnota(){
+   
+   document.getElementById('modalnota').style.display= 'none';
+};
+
+
 
 function alerta(){
 
-   if (id="rel")
-   {
 
-   alert("Arquivo enviado com sucesso!");
-   }
+   alert("Enviado com sucesso!");
 
-   if (id="material")
-   {
 
-   alert("Arquivo enviado com sucesso!");
-   }
+   
 
 }
 
+function addnota(){
+   var table = document.getElementById('table');
+   var nota = document.getElementById('notaAluno').value;
+   var materia = document.getElementById('materia').value;
+   var aluno = document.getElementById('aluno').value;
+   
 
+   table.rows[aluno].cells[materia].innerHTML = nota;
+} 
