@@ -64,7 +64,7 @@
             <h2>Selecione uma opção:</h2>
 
                 <button onclick="interacao();" class="btn" id="modal" value="agenda">Agendameto</button>
-                <button class="btn" value="aprovacao">Aprovações</button>
+                <button class="btn" onclick="aprovacao();" >Aprovações</button>
                 <button onclick="relatorio();" class="btn" value="relatorio">Relatórios</button>
                 <button onclick="conteudo();" class="btn" value="conteudos">Conteúdos</button>
                 <button onclick="chamada();" class="btn" value="chamada">Chamada</button>
@@ -237,6 +237,62 @@
                     </div>
                 </div>
 
+                <div class="bg-modal" id="modal-aprovacao">
+                    <div class="modal">
+
+                        <table class="table" id="table">
+            
+                            <tr>
+                              <td style="background-color: rgba(255, 255, 255, 0.1);">Aluno </td>
+                              <td>Pedido de matricula</td>
+                              <td>Matéria</td>
+                              <td>Carga horária diposnível</td>
+                              <td>Aprovar/Reprovar</td>
+                             
+                            </tr>
+                            <tr>
+                              <td style="background-color: rgba(255, 255, 255, 0.1);">Eduardo Amorim:</td>
+                              <td class="alerta">Pendente</td>
+                              <td>Judô</td>
+                              <td id="nao">Não</td>
+                              <td>
+                                  <select>
+                                    <option value=""></option>
+                                    <option value="">Aprovar</option>
+                                    <option value="">Reprovar</option>
+                                </select>
+                                </td>
+                              
+                            </tr>
+                            <tr>
+                              <td style="background-color: rgba(255, 255, 255, 0.1);">Lucas Lima:</td>
+                              <td class="alerta">Pendente</td>
+                              <td>Teatro</td>
+                              <td id="sim"><b></b>Sim</b></td>
+                              <td>
+                                <select>
+                                  <option value=""></option>
+                                  <option value="">Aprovar</option>
+                                  <option value="">Reprovar</option>
+                              </select>
+                              </td>
+                             
+                            </tr>
+                          </table>
+
+
+
+
+
+                        <span class="close" id="fecharModal" onclick="fecharaprovacao();">&times;</span>
+
+                        <button onclick="alerta();" class="btn-rel" id="enter">Enviar</button>
+
+
+                    </div>
+                </div>
+
+
                 
 
                 <div class="bg-modal"  id="modalrelatorio">
@@ -272,11 +328,13 @@
 
                     </div>
                         
-                        <span class="close" id="fecharrelatorio" onclick="fecharrelatorio();">&times;</span>
-
+                       
+                    <span class="close"  id="fecharrelatorio" onclick="fecharrelatorio();">&times;</span>
                     
 
                 </div>
+
+                
 
                 </div>
 

@@ -51,6 +51,17 @@ function fecharnota(){
    document.getElementById('modalnota').style.display= 'none';
 };
 
+function aprovacao(){
+   
+   document.getElementById('modal-aprovacao').style.display= 'block';
+}
+
+function fecharaprovacao(){
+   
+   document.getElementById('modal-aprovacao').style.display= 'none';
+};
+
+
 
 
 function alerta(){
