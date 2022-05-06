@@ -61,11 +61,10 @@
 
             <h2>Selecione uma opção:</h1>
                 
-            <button class="btn" onclick="mudaTela(this)" value="ano_letivo">Matrícula em ano letivo</button>
-            <button class="btn" onclick="mudaTela(this)" value="cad_atv_extra">Matrícula em atividades extras</button>
-            <button class="btn" onclick="mudaTela(this)" value="provas">Provas</button>
+            <button class="btn" onclick="mudaTela(this)" value="ano_letivo">Matrícular em ano letivo</button>
+            <button class="btn" onclick="mudaTela(this)" value="cad_atv_extra">Matrícular em atividades extras</button>
+            <button class="btn" onclick="mudaTela(this)" value="provas">Provas e Atividades extras</button>
             <button class="btn" onclick="mudaTela(this)" value="notas">Notas</button>
-            <button class="btn" onclick="mudaTela(this)" value="ver_atv_extra">Ver Atividades Extras</button>
             <button class="btn" onclick="mudaTela(this)" value="faltas">Frequencia</button>
             <button class="btn" onclick="mudaTela(this)" value="contato">Entrar em contato</button>
             <button class="btn" onclick="mudaTela(this)" value="consulta_disc">Consultar disciplinas</button>
@@ -124,7 +123,7 @@
 
             <div class="table" id="provas"><!-- terminar tudo -->
                
-                <h3>Provas:</h3>
+                <h3>Provas e Atividades Extras:</h3>
                 <table>
                     <tr>
                       <th>  </th>
@@ -225,12 +224,30 @@
             <div class="table" id="consulta_disc">
 
                 <h3>Consultar disciplínas:</h3>
+                <table id="nota">
+                  <tr>
+                      <th>Disciplinas:</th>
+                      <th>Dramat. II</th>
+                      <th>História do Teatro</th>
+                      <th>Encenação I</th>
+                      <th>Cenografia II</th>
+                      <th>Comunic. e Expres.</th>
+                  </tr>
+                  <tr>
+                      <td>Carga Horária</td>
+                      <td>80h</td>
+                      <td>40h</td>
+                      <td>75h</td>
+                      <td>45,0h</td>
+                      <td>80,0%</td>
+                  </tr>
+              </table>
             </div>
         </div>
     </div>
-    <!-- <footer>
+    <footer>
         <p>Tópicos Especiais de Sistemas - UP 2022 - Grupo Umbrella</p>
-    </footer> -->
+    </footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
