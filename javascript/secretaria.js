@@ -1,8 +1,8 @@
-function preparar() {
+function mensagem() {
 
-    var prep = document.getElementById("preparo").value;
+    var mens = document.getElementById("preparo").value;
 
-    window.alert('A mensagem a ser enviada para todos os pais por e-mail e SMS será: ' + prep );
+    window.alert('A mensagem a ser enviada para todos os pais por e-mail e SMS será: ' + mens );
 
 }
 
@@ -11,10 +11,10 @@ var select = document.querySelector('select');
 var para = document.querySelector('h4');
 
 
-select.addEventListener('change', obterClima);
+select.addEventListener('change', obterPai);
 
 
-function obterClima() {
+function obterPai() {
 
     var opcao = select.value;
 
