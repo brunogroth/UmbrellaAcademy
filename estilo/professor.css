@@ -78,6 +78,10 @@ footer{
     color: rgb(255, 145, 0);
 }
 
+#enter{
+    margin-left: 10px;
+}
+
 .btn-rel{
     height: 10%;
     border: none;
@@ -147,6 +151,7 @@ textarea{
 
 
 #table{
-    background-color: #fff !important;
+    background-color: rgb(255, 255, 255) !important;
     size: auto;
+    padding: 50px;
 }
