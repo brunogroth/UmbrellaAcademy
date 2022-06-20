@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "json-server": "^0.17.0",
+    "sequelize": "^6.20.1",
+    "sqlite3": "^5.0.8"
+  },
+  "scripts": {
+    "start": "json-server --watch public/data/db.json"
+  }
+}

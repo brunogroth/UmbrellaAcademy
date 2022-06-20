@@ -1,0 +1,103 @@
+{
+
+  "alunos": [
+    {
+      "campo1":"Segunda-feira",
+      "campo2":"Terça-feira",
+      "campo3":"Quarta-feira",
+      "campo4":"Quinta-feira",
+      "campo5":"Sexta-feira",
+      "materia2":"Matéria 2",
+      "materia3":"Matéria 3",
+      "materia4":"Matéria 4",
+      "materia5":"Matéria 5",
+      "prova":["","","","",""],
+      "ativ extra":["","","","",""],
+      "frequencia":["","","","",""],
+      "presenca":["","","","",""],
+      "notas":["","","","",""],
+      "situacaomateria":["","","","",""],
+      "solicitacaomatriculaatvextra":["","",""],
+      "mensalidademateria":["","","","",""]
+    },
+    {
+      "campo1":"Dramat. II",
+      "campo2":"História do Teatro",
+      "campo3":"Encenação I",
+      "campo4":"Cenografia II",
+      "campo5":"Comunic. e Expres.",
+      "id":2,
+      "nome":"Rodrigo Azevedo",
+      "sala":101,
+      "responsavel":"Carmen",
+      "materia1":"Matéria 1",
+      "materia2":"Matéria 2",
+      "materia3":"Matéria 3",
+      "materia4":"Matéria 4",
+      "materia5":"Matéria 5",
+      "prova":["","","","",""],
+      "ativ extra":["","","","",""],
+      "frequencia":["","","","",""],
+      "presenca":["","","","",""],
+      "notas":["","","","",""],
+      "situacaomateria":["","","","",""],
+      "solicitacaomatriculaatvextra":["","",""],
+      "mensalidademateria":["","","","",""]
+    },
+    {
+      "campo1":"",
+      "campo2":"Prova A1",
+      "campo3":"",
+      "campo4":"Recuperação A2",
+      "campo5":"",
+      "id":3,
+      "nome":"Gabriel Cardon",
+      "sala":101,
+      "responsavel":"Fabio",
+      "materia1":"Matéria 1",
+      "materia2":"Matéria 2",
+      "materia3":"Matéria 3",
+      "materia4":"Matéria 4",
+      "materia5":"Matéria 5",
+      "prova":["","","","",""],
+      "ativ extra":["","","","",""],
+      "frequencia":["","","","",""],
+      "presenca":["","","","",""],
+      "notas":["","","","",""],
+      "situacaomateria":["","","","",""],
+      "solicitacaomatriculaatvextra":["","",""],
+      "mensalidademateria":["","","","",""]
+    },
+    {
+      "campo1":"Visita Museu",
+      "campo2":"",
+      "campo3":"",
+      "campo4":"",
+      "campo5":"Ativ. Extensão 01",
+      "id":4,
+      "nome":"Lucas Lima",
+      "sala":101,
+      "responsavel":"João",
+      "materia1":"Matéria 1",
+      "materia2":"Matéria 2",
+      "materia3":"Matéria 3",
+      "materia4":"Matéria 4",
+      "materia5":"Matéria 5",
+      "prova":["","","","",""],
+      "ativ extra":["","","","",""],
+      "frequencia":["","","","",""],
+      "presenca":["","","","",""],
+      "notas":["","","","",""],
+      "situacaomateria":["","","","",""],
+      "solicitacaomatriculaatvextra":["","",""],
+      "mensalidademateria":["","","","",""]
+    }
+  ]
+}
+
+"alunos"
+{
+  id
+  nome
+  
+}
