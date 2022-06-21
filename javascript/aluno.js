@@ -14,6 +14,6 @@ function AddAtvExtra(){
     var dataatv = document.getElementById('data').value;
     
 
-    table.rows[3].cells[dataatv].innerHTML = atvextra;
+    table.rows[3].cells[dataatv-1].innerHTML = atvextra;
 } 
 

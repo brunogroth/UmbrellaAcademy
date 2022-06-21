@@ -113,6 +113,7 @@ function gerarTabela(url){
 
         //Código de geração da tabela
         var table = document.createElement('table');
+        table.setAttribute('id', 'table')
         var tbody = document.createElement('tbody');
 
 
@@ -177,7 +178,7 @@ function gerarTabela(url){
             td.appendChild(txt);
             tr.appendChild(td);
 
-            /*
+         
             //5a coluna
             var td = document.createElement('td');
 
@@ -213,7 +214,7 @@ function gerarTabela(url){
                 }
             }
             td.appendChild(linkExcluir);
-        }*/
+        }
             tr.appendChild(td);
             tbody.appendChild(tr);
 
