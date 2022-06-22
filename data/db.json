@@ -10,20 +10,10 @@
       "materia2":"Matéria 2",
       "materia3":"Matéria 3",
       "materia4":"Matéria 4",
-<<<<<<< HEAD
       "materia5":"Matéria 5",
-      "prova":["","","","",""],
-      "ativ extra":["","","","",""],
-      "frequencia":["","","","",""],
       "aluno1":"Aluno",
       "notas":"Notas",
-      "faltas":"Faltas",
-      "situacaomateria":["","","","",""],
-      "solicitacaomatriculaatvextra":["","",""],
-      "mensalidademateria":["","","","",""]
-=======
-      "materia5":"Matéria 5"
->>>>>>> ed5f1476125a59454d5d2175a366f59fce3bec7c
+      "faltas":"Faltas"
     },
     {
       "campo1":"Dramat. II",
@@ -31,32 +21,14 @@
       "campo3":"Encenação I",
       "campo4":"Cenografia II",
       "campo5":"Comunic. e Expres.",
-<<<<<<< HEAD
-      "id":2,
-      "nome":"Rodrigo Azevedo", 
-      "sala":101,
-      "responsavel":"Carmen",
-=======
->>>>>>> ed5f1476125a59454d5d2175a366f59fce3bec7c
       "materia1":"Matéria 1",
       "materia2":"Matéria 2",
       "materia3":"Matéria 3",
       "materia4":"Matéria 4",
-<<<<<<< HEAD
       "materia5":"Matéria 5",
-      "prova":["","","","",""],
-      "ativ extra":["","","","",""],
-      "frequencia":["","","","",""],
-      "presenca":["","","","",""],
-      "aluno1":"Gabriel",
+      "aluno1":"Rodrigo Azevedo",
       "notas":"9.0",
-      "faltas":"0/20",
-      "situacaomateria":["","","","",""],
-      "solicitacaomatriculaatvextra":["","",""],
-      "mensalidademateria":["","","","",""]
-=======
-      "materia5":"Matéria 5"
->>>>>>> ed5f1476125a59454d5d2175a366f59fce3bec7c
+      "faltas":"2/20"
     },
     {
       "campo1":"",
@@ -68,81 +40,10 @@
       "materia2":"Matéria 2",
       "materia3":"Matéria 3",
       "materia4":"Matéria 4",
-<<<<<<< HEAD
       "materia5":"Matéria 5",
-      "prova":["","","","",""],
-      "ativ extra":["","","","",""],
-      "frequencia":["","","","",""],
-      "aluno1":"Rodrigo",
-      "notas":"7.0",
-      "faltas":"10/20",
-      "situacaomateria":["","","","",""],
-      "solicitacaomatriculaatvextra":["","",""],
-      "mensalidademateria":["","","","",""]
-    },
-    {
-      "aluno1":"Lucas",
-      "notas":"6.5",
-      "faltas":"20/20"
-    },
-
-    {
-      "aluno1":"Eduardo",
+      "aluno1":"Bruno Groth",
       "notas":"8.0",
-      "faltas":"0/20"
-    },
-
-    {
-      "aluno1":"Bruna",
-      "notas":"10.0",
-      "faltas":"0/20"
-    },
-
-    {
-      "aluno1":"Emmanuel",
-      "notas":"6.0",
-      "faltas":"18/20"
-    },
-
-    {
-      "aluno1":"Fernanda",
-      "notas":"8.5",
-      "faltas":"12/20"
-    },
-
-    {
-      "aluno1":"Chrystian",
-      "notas":"5.0",
-      "faltas":"20/20"
-    },
-
-    {
-      "aluno1":"Rafael",
-      "notas":"0.0",
-      "faltas":"30/20"
-    },
-
-    {
-      "aluno1":"Douglas",
-      "notas":"8.0",
-      "faltas":"2/20"
-    },
-
-    {
-      "aluno1":"Thiago",
-      "notas":"4.0",
-      "faltas":"16/20"
-    },
-
-    {
-      "aluno1":"Renan",
-      "notas":"9.5",
-      "faltas":"4/20"
-    }
-
-  ]}
-=======
-      "materia5":"Matéria 5"
+      "faltas":"10/20"
     },
     {
       "campo1":"Visita Museu",
@@ -154,8 +55,46 @@
       "materia2":"Matéria 2",
       "materia3":"Matéria 3",
       "materia4":"Matéria 4",
-      "materia5":"Matéria 5"
+      "materia5":"Matéria 5",
+      "aluno1":"Eduardo Amorim",
+      "notas":"6.0",
+      "faltas":"20/20"
+    },
+
+    {
+      "aluno1":"Lucas Suares",
+      "notas":"9.5",
+      "faltas":"4/20"
+    },
+
+    {
+      "aluno1":"Gabriel Cardon",
+      "notas":"8.5",
+      "faltas":"8/20"
+    },
+
+    {
+      "aluno1":"Renan Oliveira",
+      "notas":"10.0",
+      "faltas":"0/20"
+    },
+
+    {
+      "aluno1":"Douglas Cardoso",
+      "notas":"5.5",
+      "faltas":"6/20"
+    },
+
+    {
+      "aluno1":"Thiago Silva",
+      "notas":"1.5",
+      "faltas":"24/20"
+    },
+
+    {
+      "aluno1":"Emmanuel Cortez",
+      "notas":"8.0",
+      "faltas":"16/20"
     }
   ]
 }
->>>>>>> ed5f1476125a59454d5d2175a366f59fce3bec7c
