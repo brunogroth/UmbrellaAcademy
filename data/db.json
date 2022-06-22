@@ -14,8 +14,9 @@
       "prova":["","","","",""],
       "ativ extra":["","","","",""],
       "frequencia":["","","","",""],
-      "presenca":["","","","",""],
-      "notas":["","","","",""],
+      "aluno1":"Aluno",
+      "notas":"Notas",
+      "faltas":"Faltas",
       "situacaomateria":["","","","",""],
       "solicitacaomatriculaatvextra":["","",""],
       "mensalidademateria":["","","","",""]
@@ -27,7 +28,7 @@
       "campo4":"Cenografia II",
       "campo5":"Comunic. e Expres.",
       "id":2,
-      "nome":"Rodrigo Azevedo",
+      "nome":"Rodrigo Azevedo", 
       "sala":101,
       "responsavel":"Carmen",
       "materia1":"Matéria 1",
@@ -39,7 +40,9 @@
       "ativ extra":["","","","",""],
       "frequencia":["","","","",""],
       "presenca":["","","","",""],
-      "notas":["","","","",""],
+      "aluno1":"Gabriel",
+      "notas":"9.0",
+      "faltas":"0/20",
       "situacaomateria":["","","","",""],
       "solicitacaomatriculaatvextra":["","",""],
       "mensalidademateria":["","","","",""]
@@ -62,42 +65,71 @@
       "prova":["","","","",""],
       "ativ extra":["","","","",""],
       "frequencia":["","","","",""],
-      "presenca":["","","","",""],
-      "notas":["","","","",""],
+      "aluno1":"Rodrigo",
+      "notas":"7.0",
+      "faltas":"10/20",
       "situacaomateria":["","","","",""],
       "solicitacaomatriculaatvextra":["","",""],
       "mensalidademateria":["","","","",""]
     },
     {
-      "campo1":"Visita Museu",
-      "campo2":"",
-      "campo3":"",
-      "campo4":"",
-      "campo5":"Ativ. Extensão 01",
-      "id":4,
-      "nome":"Lucas Lima",
-      "sala":101,
-      "responsavel":"João",
-      "materia1":"Matéria 1",
-      "materia2":"Matéria 2",
-      "materia3":"Matéria 3",
-      "materia4":"Matéria 4",
-      "materia5":"Matéria 5",
-      "prova":["","","","",""],
-      "ativ extra":["","","","",""],
-      "frequencia":["","","","",""],
-      "presenca":["","","","",""],
-      "notas":["","","","",""],
-      "situacaomateria":["","","","",""],
-      "solicitacaomatriculaatvextra":["","",""],
-      "mensalidademateria":["","","","",""]
-    }
-  ]
-}
+      "aluno1":"Lucas",
+      "notas":"6.5",
+      "faltas":"20/20"
+    },
 
-"alunos"
-{
-  id
-  nome
-  
-}
+    {
+      "aluno1":"Eduardo",
+      "notas":"8.0",
+      "faltas":"0/20"
+    },
+
+    {
+      "aluno1":"Bruna",
+      "notas":"10.0",
+      "faltas":"0/20"
+    },
+
+    {
+      "aluno1":"Emmanuel",
+      "notas":"6.0",
+      "faltas":"18/20"
+    },
+
+    {
+      "aluno1":"Fernanda",
+      "notas":"8.5",
+      "faltas":"12/20"
+    },
+
+    {
+      "aluno1":"Chrystian",
+      "notas":"5.0",
+      "faltas":"20/20"
+    },
+
+    {
+      "aluno1":"Rafael",
+      "notas":"0.0",
+      "faltas":"30/20"
+    },
+
+    {
+      "aluno1":"Douglas",
+      "notas":"8.0",
+      "faltas":"2/20"
+    },
+
+    {
+      "aluno1":"Thiago",
+      "notas":"4.0",
+      "faltas":"16/20"
+    },
+
+    {
+      "aluno1":"Renan",
+      "notas":"9.5",
+      "faltas":"4/20"
+    }
+
+  ]}
