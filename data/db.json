@@ -10,6 +10,7 @@
       "materia2":"Matéria 2",
       "materia3":"Matéria 3",
       "materia4":"Matéria 4",
+<<<<<<< HEAD
       "materia5":"Matéria 5",
       "prova":["","","","",""],
       "ativ extra":["","","","",""],
@@ -20,6 +21,9 @@
       "situacaomateria":["","","","",""],
       "solicitacaomatriculaatvextra":["","",""],
       "mensalidademateria":["","","","",""]
+=======
+      "materia5":"Matéria 5"
+>>>>>>> ed5f1476125a59454d5d2175a366f59fce3bec7c
     },
     {
       "campo1":"Dramat. II",
@@ -27,14 +31,18 @@
       "campo3":"Encenação I",
       "campo4":"Cenografia II",
       "campo5":"Comunic. e Expres.",
+<<<<<<< HEAD
       "id":2,
       "nome":"Rodrigo Azevedo", 
       "sala":101,
       "responsavel":"Carmen",
+=======
+>>>>>>> ed5f1476125a59454d5d2175a366f59fce3bec7c
       "materia1":"Matéria 1",
       "materia2":"Matéria 2",
       "materia3":"Matéria 3",
       "materia4":"Matéria 4",
+<<<<<<< HEAD
       "materia5":"Matéria 5",
       "prova":["","","","",""],
       "ativ extra":["","","","",""],
@@ -46,6 +54,9 @@
       "situacaomateria":["","","","",""],
       "solicitacaomatriculaatvextra":["","",""],
       "mensalidademateria":["","","","",""]
+=======
+      "materia5":"Matéria 5"
+>>>>>>> ed5f1476125a59454d5d2175a366f59fce3bec7c
     },
     {
       "campo1":"",
@@ -53,14 +64,11 @@
       "campo3":"",
       "campo4":"Recuperação A2",
       "campo5":"",
-      "id":3,
-      "nome":"Gabriel Cardon",
-      "sala":101,
-      "responsavel":"Fabio",
       "materia1":"Matéria 1",
       "materia2":"Matéria 2",
       "materia3":"Matéria 3",
       "materia4":"Matéria 4",
+<<<<<<< HEAD
       "materia5":"Matéria 5",
       "prova":["","","","",""],
       "ativ extra":["","","","",""],
@@ -133,3 +141,21 @@
     }
 
   ]}
+=======
+      "materia5":"Matéria 5"
+    },
+    {
+      "campo1":"Visita Museu",
+      "campo2":"",
+      "campo3":"",
+      "campo4":"",
+      "campo5":"Ativ. Extensão 01",
+      "materia1":"Matéria 1",
+      "materia2":"Matéria 2",
+      "materia3":"Matéria 3",
+      "materia4":"Matéria 4",
+      "materia5":"Matéria 5"
+    }
+  ]
+}
+>>>>>>> ed5f1476125a59454d5d2175a366f59fce3bec7c

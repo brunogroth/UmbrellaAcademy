@@ -12,8 +12,10 @@ function AddAtvExtra(){
     var table = document.getElementById('table');
     var atvextra = document.getElementById('atv-extra').value;
     var dataatv = document.getElementById('data').value;
-    
 
-    table.rows[3].cells[dataatv].innerHTML = atvextra;
+
+    table.rows[3].cells[dataatv-1].innerHTML = atvextra;
+    alert('Atividade Extra alterada com sucesso!');
+
 } 
 

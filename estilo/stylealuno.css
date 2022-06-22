@@ -49,3 +49,7 @@ table, th, td{
     color:rgb(255, 255, 255);
     background-color: rgb(247, 81, 63);
 }
+
+.table{
+    background-color: rgba(0, 0, 0, 0.5);
+}
