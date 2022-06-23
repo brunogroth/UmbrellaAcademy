@@ -13,7 +13,8 @@
       "materia5":"Matéria 5",
       "aluno1":"Aluno",
       "notas":"Notas",
-      "faltas":"Faltas"
+      "faltas":"Faltas",
+      "ativextra":"Atividade Extra"
     },
     {
       "campo1":"Dramat. II",
@@ -28,7 +29,8 @@
       "materia5":"Matéria 5",
       "aluno1":"Rodrigo Azevedo",
       "notas":"9.0",
-      "faltas":"2/20"
+      "faltas":"2/20",
+      "ativextra":"História do Teatro"
     },
     {
       "campo1":"",
@@ -43,7 +45,9 @@
       "materia5":"Matéria 5",
       "aluno1":"Bruno Groth",
       "notas":"8.0",
-      "faltas":"10/20"
+      "faltas":"10/20",
+      "ativextra":"Encenação I"
+      
     },
     {
       "campo1":"Visita Museu",
@@ -58,43 +62,50 @@
       "materia5":"Matéria 5",
       "aluno1":"Eduardo Amorim",
       "notas":"6.0",
-      "faltas":"20/20"
+      "faltas":"20/20",
+      "ativextra":"Visita Museu"
     },
 
     {
       "aluno1":"Lucas Suares",
       "notas":"9.5",
-      "faltas":"4/20"
+      "faltas":"4/20",
+      "ativextra":"Não matriculado"
     },
 
     {
       "aluno1":"Gabriel Cardon",
       "notas":"8.5",
-      "faltas":"8/20"
+      "faltas":"8/20",
+      "ativextra":"Cenografia II"
     },
 
     {
       "aluno1":"Renan Oliveira",
       "notas":"10.0",
-      "faltas":"0/20"
+      "faltas":"0/20",
+      "ativextra":"Não matriculado"
     },
 
     {
       "aluno1":"Douglas Cardoso",
       "notas":"5.5",
-      "faltas":"6/20"
+      "faltas":"6/20",
+      "ativextra":"Comunic. e Expres."
     },
 
     {
       "aluno1":"Thiago Silva",
       "notas":"1.5",
-      "faltas":"24/20"
+      "faltas":"24/20",
+      "ativextra":"Cenografia II"
     },
 
     {
       "aluno1":"Emmanuel Cortez",
       "notas":"8.0",
-      "faltas":"16/20"
+      "faltas":"16/20",
+      "ativextra":"Visita Museu"
     }
   ]
 }

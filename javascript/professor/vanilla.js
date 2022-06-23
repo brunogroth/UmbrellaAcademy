@@ -3,7 +3,6 @@
 
 var main = document.getElementsByTagName('main')[0];
 
-var btnAPI = document.getElementById('btnAPI');
 var btnalunos = document.getElementById('btnprofessors');
 
 
@@ -42,6 +41,8 @@ function enviar(aluno, url, method, json){
     });
 }
 
+/*
+
 function carregarHtml(url, elemento, aluno){
     fetch(url)
     .then((resposta)=> {
@@ -62,14 +63,14 @@ function carregarHtml(url, elemento, aluno){
         var btnSalvar = document.getElementById('btnSalvar');
         btnSalvar.onclick = ()=>{
 
-            var txtNome = document.getElementById('nome');
-            var txtMateria1 = document.getElementById('materia1');
+            var txtNome = document.getElementById('notas');
+            var txtMateria1 = document.getElementById('aluno');
             var nomeForm = txtNome.value;
             var materia1Form = txtMateria1.value;
 
             var json = {
-                "nome": nomeForm,
-                "materia1": materia1Form
+                "notas": nomeForm,
+                "aluno": materia1Form
             }
 
             var url = 'http://localhost:3000/alunos'
@@ -88,6 +89,7 @@ function carregarHtml(url, elemento, aluno){
 
     });
 }
+*/
 
 function configurarForm(aluno){
     carregarHtml('javascript/aluno/form.html', main, aluno);
@@ -95,16 +97,18 @@ function configurarForm(aluno){
 
 var listaDealunos;
 
+
+
 function gerarTabela(url){
     main.innerHTML = '';
 
     var btnIncluir = document.createElement('button');
-    btnIncluir.innerText = "Incluir";
+    btnIncluir.innerText = "";
     btnIncluir.onclick = ()=> {
         configurarForm();
     }
 
-    main.appendChild(btnIncluir);
+  
 
     fetch(url)
     .then((resposta)=> {
@@ -170,45 +174,64 @@ function gerarTabela(url){
             var txt = document.createTextNode(aluno.faltas);
             td.appendChild(txt);
             tr.appendChild(td);
-        
 
-            /*
-            //5a coluna
+            //4a coluna
             var td = document.createElement('td');
+            var txt = document.createTextNode(aluno.ativextra);
+            td.appendChild(txt);
+            tr.appendChild(td);
 
-            //Link editar
+            
+
+        
+          
+
+            
+            //5a coluna
+            
+
             if(i>0)//validação pra não pegar o primeiro "aluno" que são os dias da semana
             {
-            var linkEditar = document.createElement('a');
-            linkEditar.href = '#' + aluno.id;
-            linkEditar.setAttribute("id", aluno.campo5);
-            var txt = document.createTextNode('Editar');
-            linkEditar.appendChild(txt);
-            linkEditar.onclick = (event)=> {
-                var id = event.target.id;
-                var aluno = listaDealunos.find(aluno => aluno.id == id);
-                configurarForm(aluno);
-            }
-            td.appendChild(linkEditar);
 
+                
+                //Link editar
+                var linkEditar = document.createElement('a');
+                linkEditar.href = '#' + alunos.id;
+                linkEditar.setAttribute("id", alunos.id);
+                var txt = document.createTextNode('');
+                linkEditar.appendChild(txt);            
+                linkEditar.onclick = (event)=> {
+                    var id = event.target.id;               
+                    var alunos = listaDealunos.find(alunos => alunos.id == id);      
+                    configurarForm(alunos);
+                }
+                td.appendChild(linkEditar);
+                
+                
             //Link excluir
             var linkExcluir = document.createElement('a');
             linkExcluir.href = '#' + aluno.id;
             linkExcluir.setAttribute("id", aluno.id);
-            var txt = document.createTextNode('Excluir');
+            var txt = document.createTextNode('');
             linkExcluir.appendChild(txt);
-            linkExcluir.onclick = (event)=> {
-                if (confirm('Tem certeza que deseja excluir ?')) {
+            linkExcluir.onclick = (event)=> 
+            {
+                var id = event.target.id;
+                var aluno = listaDealunos.find(aluno => aluno.id == id);
+                
+                if (confirm('Deseja excluir todos os registros?')) {
                     fetch('http://localhost:3000/alunos/' + event.target.id, {
                         method: "DELETE"
                     })
                     .then(()=> {
                         gerarTabela('http://localhost:3000/alunos');
                     });
+                }else{
+                    configurarForm(aluno);
                 }
             }
             td.appendChild(linkExcluir);
-        }*/
+        }
             tr.appendChild(td);
             tbody.appendChild(tr);
 
@@ -223,11 +246,6 @@ function gerarTabela(url){
 }
 
 
-
-btnAPI.onclick = ()=>{
-    main.innerHTML = '';
-    gerarLista('http://localhost:3000/alunos');
-}
 
 btnalunos.onclick = ()=>{
     main.innerHTML = '';
