@@ -63,11 +63,11 @@
                 
             <button class="btn" onclick="mudaTela(this)" value="ano_letivo">Matrícular em ano letivo</button>
             <button class="btn" onclick="mudaTela(this)" value="cad_atv_extra">Matrícular em atividades extras</button>
-            <button class="btn" onclick="mudaTela(this)" value="provas">Provas e Atividades extras</button>
-            <button class="btn" onclick="mudaTela(this)" value="notas">Notas</button>
-            <button class="btn" onclick="mudaTela(this)" value="faltas">Frequencia</button>
+            <!-- <button class="btn" onclick="mudaTela(this)" value="provas">Provas e Atividades extras</button> -->
+            <!-- <button class="btn" onclick="mudaTela(this)" value="notas">Notas</button> -->
+            <!-- <button class="btn" onclick="mudaTela(this)" value="faltas">Frequencia</button> -->
             <button class="btn" onclick="mudaTela(this)" value="contato">Entrar em contato</button>
-            <button class="btn" onclick="mudaTela(this)" value="consulta_disc">Consultar disciplinas</button>
+            <!-- <button class="btn" onclick="mudaTela(this)" value="consulta_disc">Consultar disciplinas</button> -->
 
             <div class="table ano_letivo" id="ano_letivo">
 
@@ -90,11 +90,39 @@
                   </select>
                   <br>
 
-                  <button class="btn">Enviar</button>
+                  <button class="btn" onclick="alertAnoLetivo()">Enviar</button>
             </div>
 
-            <div class="table cad_atv_extra" id="cad_atv_extra"> <!-- terminar css -->
+            
 
+
+
+            <div id="conteudo" class="table cad_atv_extra"></div>
+                <h2>Matrícula em Atividades Extras:</h2>
+                    <p>Informe o nome da Atividade Extra e o dia da semana desejado para realizar. A Atividade Extra será incluída no calendário acima.</p>
+                <div class="conteudo2">
+                        <label class="form-label my-3">Atividade Extra: </label><input type="text" class="form-control" id="atv-extra" placeholder="Nome da Atividade">
+                        <p><label class="form-label my-3">Data: </label>
+                        <select id="data" class=" col-3 form-control mb-4">
+                            <option value="1">Segunda-feira</option>
+                            <option value="2">Terça-feira</option>
+                            <option value="3">Quarta-feira</option>
+                            <option value="4">Quinta-feira</option>
+                            <option value="5">Sexta-feira</option>
+                        </select></p>
+                        <button onclick="AddAtvExtra();" class="btn">Matricular</button>
+                    <hr class="my-5" color="white">
+                </div>
+            </div>
+
+            <main>
+              <h2 class="text-center bold"><strong>Calendário Escolar</strong></h2>
+              
+              <!--Conteúdo inserido pelo código javascript-->
+            </main>
+
+          <!-- / <div id="tabela">  </div> -->
+            <!-- <div class="table cad_atv_extra" id="cad_atv_extra"> 
                 <h3>Matricular em atividades extras:</h3>
                 <label>Selecione uma disciplina abaixo</label><br>
 
@@ -119,9 +147,9 @@
                 <br>
 
                 <button class="btn">Enviar</button>
-            </div>
+            </div> -->
 
-            <div class="table" id="provas"><!-- terminar tudo -->
+            <!-- <div class="table" id="provas">
                
                 <h3>Provas e Atividades Extras:</h3>
                 <table>
@@ -244,13 +272,15 @@
               </table>
             </div>
         </div>
-    </div>
+    </div> -->
     <footer>
         <p>Tópicos Especiais de Sistemas - UP 2022 - Grupo Umbrella</p>
     </footer>
-</body>
+<script src="javascript/responsavel/vanilla.js"></script>
+<script>inicia();</script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="javascript/responsavel.js"></script>
+</body>
 </html>
