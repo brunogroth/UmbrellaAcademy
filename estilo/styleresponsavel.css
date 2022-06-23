@@ -32,12 +32,12 @@
     margin: auto;
 } */
 
-.conteudo .table{
+/* .conteudo .table{
     padding: 50px;
     text-align: center;
     display: none;
     background-color: rgba(0, 0, 0, 0.767);
-}
+} */
 
 a, a:hover{
     text-decoration: none;
@@ -67,16 +67,19 @@ select{
     margin: 10px;
 }
 
-/* .table{
+.table{
     border-radius: 5px;
-    background-color: rgba(202, 187, 187, 0.514);
-} */
+    background-color: rgba(29, 27, 27, 0.514);
+}
+
+.table a{
+    color: rgb(238, 11, 11);
+}
 
 footer{
     background-color: #333;
     color:#fff;
     text-align: center;
-    position: fixed;
     bottom: 0;
     left: 0;
     padding: 0.4rem;
