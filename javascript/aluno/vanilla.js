@@ -137,7 +137,7 @@ function gerarTabela(url){
 
         var qtdeLinhas = alunos.length;
 
-        for(var i = 0; i < qtdeLinhas; i++){
+        for(var i = 0; i < 4; i++){
             var aluno = alunos[i];
 
             //Linha
