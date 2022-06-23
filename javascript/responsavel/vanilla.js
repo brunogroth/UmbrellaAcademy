@@ -179,29 +179,29 @@ function gerarTabela(url){
             if(i>0)//validação pra não pegar o primeiro "aluno" que são os dias da semana
             {
 
-            //Link excluir
-            var linkExcluir = document.createElement('a');
-            linkExcluir.href = '#' + aluno.id;
-            linkExcluir.setAttribute("id", aluno.id);
-            var txt = document.createTextNode('Excluir');
-            linkExcluir.appendChild(txt);
-            linkExcluir.onclick = (event)=> 
-            {
-                var id = event.target.id;
-                var aluno = listaDealunos.find(aluno => aluno.id == id);
+            // //Link excluir
+            // var linkExcluir = document.createElement('a');
+            // linkExcluir.href = '#' + aluno.id;
+            // linkExcluir.setAttribute("id", aluno.id);
+            // var txt = document.createTextNode('Excluir');
+            // linkExcluir.appendChild(txt);
+            // linkExcluir.onclick = (event)=> 
+            // {
+            //     var id = event.target.id;
+            //     var aluno = listaDealunos.find(aluno => aluno.id == id);
                 
-                if (confirm('Deseja excluir todos os registros?')) {
-                    fetch('http://localhost:3000/alunos/' + event.target.id, {
-                        method: "DELETE"
-                    })
-                    .then(()=> {
-                        gerarTabela('http://localhost:3000/alunos');
-                    });
-                }else{
-                    configurarForm(aluno);
-                }
-            }
-            td.appendChild(linkExcluir);
+            //     if (confirm('Deseja excluir todos os registros?')) {
+            //         fetch('http://localhost:3000/alunos/' + event.target.id, {
+            //             method: "DELETE"
+            //         })
+            //         .then(()=> {
+            //             gerarTabela('http://localhost:3000/alunos');
+            //         });
+            //     }else{
+            //         configurarForm(aluno);
+            //     }
+            // }
+            // td.appendChild(linkExcluir);
         }
             tr.appendChild(td);
             tbody.appendChild(tr);
