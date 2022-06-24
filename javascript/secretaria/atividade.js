@@ -1,7 +1,7 @@
 //Como executar query para filtrar dados
 //http://localhost:3000/alunos?q=iphone
 
-var main = document.getElementById('mine');
+var main = document.getElementById('atividade');
 
 
 function criarLista(alunos){
@@ -102,9 +102,13 @@ function gerarTabela(url){
         listaDealunos = alunos;
 
         //Código de geração da tabela
+        var frequencia = document.getElementById('atividade');
+
         var table = document.createElement('table');
         table.setAttribute('id', 'table');
         table.classList.add('table');
+        frequencia.classList.add('table');
+
 
         var tbody = document.createElement('tbody');
 
@@ -197,10 +201,10 @@ function gerarTabela(url){
 
         }
 
-        table.appendChild(tbody);
+        frequencia.appendChild(tbody);
 
 
-        main.appendChild(table);
+        frequencia.appendChild(table);
 
     })
 }
