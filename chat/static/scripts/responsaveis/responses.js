@@ -9,11 +9,11 @@ function getBotResponse(input) {
     }
 
     // Simple responses
-    if (input == "hello") {
-        return "Hello there!";
-    } else if (input == "goodbye") {
-        return "Talk to you later!";
+    if (input == "1") {
+        return "Para obter mais informações sobre boleto ligue 3030-3030";
+    } else if (input == "2") {
+        return "Para rematricula acesse o painel dos responsáveis e clique em <strong>rematricula</strong>";
     } else {
-        return "Try asking something else!";
+        return "Olá Adriana!";
     }
 }
