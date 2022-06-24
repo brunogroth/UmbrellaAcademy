@@ -1,15 +1,7 @@
-// 1. Check that jQuery library is loaded:
-// console.log(jQuery);
 
-//2.1) Load App code after document is ready:
 jQuery(init);
-// 2.2) jQuery(function ($){/* App Code here */})
 
-//--------------//
-
-// 3) App logic goes here:
 function init($) {
-    // jQuery.ajax(); --> $.ajax(); // $ alias for jQuery
 
     let $getUsersButton = document.querySelector('#getusers');
     let $addUserButton = document.querySelector('#add-user');
@@ -22,23 +14,21 @@ function init($) {
 
     
 
-    //add a click that refers to the whole table:
+    // chama a tabela inteira de alunos
     document.querySelector("table")
         .addEventListener("click", clickHandler);
 
     function clickHandler(event) {
 
-        //targets the element that clicked:
         let $tr = event.target.parentElement;
         let id = $tr.firstElementChild.textContent;
         let type = event.target.className;
 
         if (type === "delete") {
             console.log($tr);
-            //console.log(type);
             console.log(id);
 
-            console.log("delete attempt");
+            console.log("tentativa delete");
 
             delUser(id);
 
@@ -49,7 +39,7 @@ function init($) {
         }
     }
 
-    // edit user when click on update:
+    // funcao de editar/atualizar usuarios
     function editUser(id) {
         let $tr = event.target.parentElement;
         let nomeAluno = $tr.children[1].firstElementChild.value;
@@ -69,6 +59,7 @@ function init($) {
             success: function (result) {
                 console.log("Sucesso!");
                 alert("Aluno atualizado.");
+                location.reload();
             }
         }
         $.ajax(editOptions);
@@ -76,7 +67,7 @@ function init($) {
 
     }
 
-    // delete user when click on delete:
+    // funcao de deletar usuarios
     function delUser(id) {
 
         let delOptions = {
@@ -91,7 +82,7 @@ function init($) {
         }
     }
 
-    // add new user details:
+    // funcao de adicionar usuarios pelo form
     function addUser() {
         let $nomeAluno = document.querySelector("#inputNome");
         let $id = document.querySelector("#inputID")
@@ -116,12 +107,13 @@ function init($) {
             success: handleAddUser,
             success: function (result) {
                 alert("Aluno adicionado.");
+                location.reload();
             }
         }
         $.ajax(addOptions);
     }
     
-    // get all users:
+    // puxar todos usuarios:
     function getUsers() {
         $.ajax(options);
         $tbody.innerHTML = "";
@@ -131,7 +123,7 @@ function init($) {
         console.log("Usuário adicionado com sucesso.");
     }
 
-    //dynamically create table rows:
+    // criar as linhas da tabela dinamicamente
     function createRow(alunos) {
 
         let $tr = document.createElement("tr");
@@ -149,12 +141,9 @@ function init($) {
     }
 
     function handleResponse(data) {
-        /* to see the keys of an object:
-            let keys = Object.keys(data[0]);
-            console.log(keys);
-        */
+        
         let nomeAluno = data[0];
-        // createRow(alunos1);
+        // criar rows;
         if (data instanceof Array) {
             data.map(createRow);
         } else {
@@ -163,7 +152,7 @@ function init($) {
 
     }
 
-    // add event Listeners to buttons get & add:
+    // evento dos botoes 
     $getUsersButton.addEventListener("click", getUsers);
     $addUserButton.addEventListener("click", addUser);
     
@@ -217,12 +206,7 @@ $(document)
                                     //     }
                                     // },
                                     { 'data': 'mensalidade' },
-                                    {
-                                        //'data': 'email',
-                                        'render': function(data, type, full, meta) {
-                                            return '<a href="http://www.sicadi.com.br/mhouse/boleto/geraboleto.php'  + '"target=_blank">Emitir Boleto</a>';
-                                        }
-                                    },
+                                  
                                     
                                 ]
                             });
