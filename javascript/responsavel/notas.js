@@ -42,53 +42,6 @@ function enviar(aluno, url, method, json){
     });
 }
 
-// function carregarHtml(url, elemento, aluno){
-//     fetch(url)
-//     .then((resposta)=> {
-//         return resposta.text();
-//     })
-//     .then((html)=>{
-//         elemento.innerHTML = html;
-//     })
-//     .then(()=>{
-//         var txtNome = document.getElementById('nome');
-//         var txtMateria1 = document.getElementById('materia1');
-
-//         if (aluno != null){
-//             txtNome.value = aluno.nome;
-//             txtMateria1.value = aluno.materia1;
-//         }
-
-//         var btnSalvar = document.getElementById('btnSalvar');
-//         btnSalvar.onclick = ()=>{
-
-//             var txtNome = document.getElementById('nome');
-//             var txtMateria1 = document.getElementById('materia1');
-//             var nomeForm = txtNome.value;
-//             var materia1Form = txtMateria1.value;
-
-//             var json = {
-//                 "nome": nomeForm,
-//                 "materia1": materia1Form
-//             }
-
-//             var url = 'http://localhost:3000/alunos'
-
-//             if (aluno != null){
-//               enviar(aluno, url + '/' + aluno.id, 'PUT', json);
-//             } else {
-//                enviar(aluno, url, 'POST', json);
-//             }
-//         }
-
-//         var btnVoltar = document.getElementById('btnVoltar');
-//         btnVoltar.onclick = ()=>{
-//             gerarTabela('http://localhost:3000/alunos');
-//         };
-
-//     });
-// }
-
 function configurarForm(aluno){
     carregarHtml('javascript/aluno/form.html', main, aluno);
 }
@@ -160,6 +113,11 @@ function gerarTabela(url){
             //3a coluna
             var td = document.createElement('td');
             var txt = document.createTextNode(aluno.faltas);
+            td.appendChild(txt);
+            tr.appendChild(td);
+
+            var td = document.createElement('td');
+            var txt = document.createTextNode(aluno.mensalidadeResponsavel);
             td.appendChild(txt);
             tr.appendChild(td);
 

@@ -34,7 +34,8 @@
       "id":"0",
       "nomeAluno" : "Bruno Groth",
       "extraFinanceiro" : "Capoeira/Natação",
-      "situacaoFinanceiro" : "Matriculado"
+      "situacaoFinanceiro" : "Matriculado",
+      "mensalidadeResponsavel" : "Mensalidade"
     },
     {
       "campo1":"Dramat. II",
@@ -70,7 +71,8 @@
       "id":"1",
       "nomeAluno" : "Rodrigo Azevedo",
       "extraFinanceiro" : "Capoeira/Natação",
-      "situacaoFinanceiro" : "Matriculado" 
+      "situacaoFinanceiro" : "Matriculado" ,
+      "mensalidadeResponsavel" : "1300R$"
     },
     {
       "campo1":"",
