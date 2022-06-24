@@ -492,23 +492,5 @@
 <script src="javascript/professor.js"></script>
   <script src="javascript/professor/vanilla.js"></script>
 
-<script>
-    cont meuUp = document.getElementById('meuUp');
-    cont inpFile = document.getElementById('inpFile')
-        meuUp.addEventListener("submit", e => {
-                        e.preventDdefault();
-
-                        const edpoint = "upload.php"
-                        const formData = new FormData();
-
-                        formData.append("inpFile", inpFile.file[0]);
-
-                        fetch(endpoint, {
-                            method: "post",
-                            body: formData
-            });
-        });
-</script>
-
 </body>
 </html>
