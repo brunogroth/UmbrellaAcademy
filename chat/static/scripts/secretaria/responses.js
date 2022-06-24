@@ -13,7 +13,7 @@ function getBotResponse(input) {
     }
 
     else if (input == "2") {
-        return "Não há como reabrir notas de alunos </br>Posso te ajudar em mais alguma questão?</br><strong>Sim/Não</strong>";
+        return "Para consultar a situação dos alunos cadastrados olhe a tabela da tela</br>Posso te ajudar em mais alguma questão?</br><strong>Sim/Não</strong>";
     }
     else if (input == "3") {
         return "Para outros assunto favor ir presencial a secretaria </br>Posso te ajudar em mais alguma questão?</br><strong>Sim/Não</strong>";
