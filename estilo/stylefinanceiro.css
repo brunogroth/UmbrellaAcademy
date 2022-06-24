@@ -28,8 +28,6 @@ nav ul{
 nav ul li{
     list-style-type: none;
     display: inline-block;
-
-
 }*/
 nav ul li a{
     text-decoration: none; 
@@ -112,4 +110,24 @@ label{
     background: transparent;
     box-shadow: none;
     color: rgb(255, 255, 255) !important;
+}
+td:nth-child(5){
+    cursor: pointer;
+    
+  }
+  td:nth-child(6){
+    cursor: pointer;
+    color: lightcoral;
+  }
+
+  #cancel, #add-user {
+    cursor: pointer;
+    border-radius: 3px;
+    background: #000;
+}
+  label{
+    color: rgb(255, 255, 255);
+  }
+#labelForm {
+    color: #000;
 }

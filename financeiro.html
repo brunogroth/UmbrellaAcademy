@@ -53,6 +53,8 @@
 <br><br>
 
 
+<button id="getusers">Editar Informações</button>
+<a href="#addUserModal" data-toggle="modal"> <button>Adicionar usuários</button></a>
 
 <table id="example" class="display" style="width:100%">
   <thead>
@@ -62,10 +64,52 @@
       <th scope="col">Matricula</th>
       <th scope="col">Materias Extras</th>
       <th scope="col">Mensalidade Total</th>
-      <th scope="col" class="tdaction">Impressao</th>
+      <th>Editar</th>
+      <th>Deletar</th>
     </tr>
   </thead>
 
+  <tbody>
+
+  </tbody>
+  <div id="addUserModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form>
+                <div class="modal-header">
+                    <h4 class="modal-title">Adicionar Aluno</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label id="labelForm">Nome</label>
+                        <input type="text" id="inputNome" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                      <label id="labelForm">ID Aluno</label>
+                      <input type="text" id="inputID" class="form-control" required>
+                  </div>
+                  <div class="form-group">
+                    <label id="labelForm">Situação da Matrícula</label>
+                    <input type="text" id="inputSituacao" class="form-control" required>
+                </div>                  
+                    <div class="form-group">
+                        <label id="labelForm">Matéria Extra</label>
+                        <input type="text" id="inputExtra" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label id="labelForm">Mensalidade</label>
+                        <input type="text" id="inputMensalidade" class="form-control" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input id="cancel" data-dismiss="modal" value="Cancelar">
+                    <input id="add-user" value="Adicionar">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
   <tfoot>
       <tr>
@@ -108,6 +152,4 @@
 <script type="text/javascript" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <script src="jquery.tabledit.js"></script>
-
-
 
