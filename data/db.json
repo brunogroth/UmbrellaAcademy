@@ -28,8 +28,12 @@
       "professor": "Professor Responsavel",
       "estado": "Estado da materia",
       "situacao": "Situação da matricula",
-      "extra": "Atividades  Extras:"
-
+      "extra": "Atividades  Extras:",
+      "mensalidade":"1300R$",
+      "id":"0",
+      "nomeAluno" : "Bruno Groth",
+      "extraFinanceiro" : "Capoeira/Natação",
+      "situacaoFinanceiro" : "Matriculado"
     },
     {
       "campo1":"Dramat. II",
@@ -59,7 +63,12 @@
       "frequencia2":"80,0%",
       "frequencia3":"80,0%",
       "frequencia4":"80,0%",
-      "frequencia5":"80,0%"
+      "frequencia5":"80,0%",
+      "mensalidade":"1300R$",
+      "id":"1",
+      "nomeAluno" : "Rodrigo Azevedo",
+      "extraFinanceiro" : "Capoeira/Natação",
+      "situacaoFinanceiro" : "Matriculado" 
     },
     {
       "campo1":"",
@@ -89,7 +98,12 @@
       "frequencia2":"80,0%",
       "frequencia3":"80,0%",
       "frequencia4":"80,0%",
-      "frequencia5":"80,0%"
+      "frequencia5":"80,0%",
+      "mensalidade":"1300R$",
+      "id":"2",
+      "nomeAluno" : "Eduardo Amorim",
+      "extraFinanceiro" : "Não",
+      "situacaoFinanceiro" : "Matriculado"
     },
     {
       "campo1":"Visita Museu",
@@ -119,11 +133,16 @@
       "frequencia2":"80,0%",
       "frequencia3":"80,0%",
       "frequencia4":"80,0%",
-      "frequencia5":"80,0%"
+      "frequencia5":"80,0%",
+      "mensalidade":"1300R$",
+      "id":"3",
+      "nomeAluno" : "Eduardo Teste",
+      "extraFinanceiro" : "Natação",
+      "situacaoFinanceiro" : "Matriculado"
     },
 
     {
-      "aluno1":"Lucas Suares",
+      "aluno1":"Lucas Soares",
       "notas":"9.5",
       "faltas":"4/20",
       "nome1":"9,2",
@@ -140,7 +159,12 @@
       "frequencia2":"80,0%",
       "frequencia3":"80,0%",
       "frequencia4":"80,0%",
-      "frequencia5":"80,0%"
+      "frequencia5":"80,0%",
+      "mensalidade":"1300R$",
+      "id":"4",
+      "nomeAluno" : "Lucas Soares",
+      "extraFinanceiro" : "Natação",
+      "situacaoFinanceiro" : "Matriculado"
     },
 
     {
@@ -161,7 +185,12 @@
       "frequencia2":"80,0%",
       "frequencia3":"80,0%",
       "frequencia4":"80,0%",
-      "frequencia5":"80,0%"
+      "frequencia5":"80,0%",
+      "mensalidade":"1300R$",
+      "id":"5",
+      "nomeAluno" : "Gabriel Cardon",
+      "extraFinanceiro" : "Ginastica",
+      "situacaoFinanceiro" : "Matriculado"
     },
 
     {
@@ -182,7 +211,12 @@
       "frequencia2":"80,0%",
       "frequencia3":"80,0%",
       "frequencia4":"80,0%",
-      "frequencia5":"80,0%"
+      "frequencia5":"80,0%",
+      "mensalidade":"1300R$",
+      "id":"6",
+      "nomeAluno" : "Renan Oliveira",
+      "extraFinanceiro" : "Não",
+      "situacaoFinanceiro" : "Matriculado"
     },
 
     {
@@ -203,7 +237,12 @@
       "frequencia2":"80,0%",
       "frequencia3":"80,0%",
       "frequencia4":"80,0%",
-      "frequencia5":"80,0%"
+      "frequencia5":"80,0%",
+      "mensalidade":"1300R$",
+      "id":"7",
+      "nomeAluno" : "Douglas Cardoso",
+      "extraFinanceiro" : "Natação",
+      "situacaoFinanceiro" : "Matriculado"
     },
 
     {
@@ -224,7 +263,12 @@
       "frequencia2":"80,0%",
       "frequencia3":"80,0%",
       "frequencia4":"80,0%",
-      "frequencia5":"80,0%"
+      "frequencia5":"80,0%",
+      "mensalidade":"1300R$",
+      "id":"8",
+      "nomeAluno" : "Thiago Silva",
+      "extraFinanceiro" : "Capoeira",
+      "situacaoFinanceiro" : "Matriculado"
     },
 
     {
@@ -245,7 +289,12 @@
       "frequencia2":"80,0%",
       "frequencia3":"80,0%",
       "frequencia4":"80,0%",
-      "frequencia5":"80,0%"
+      "frequencia5":"80,0%",
+      "mensalidade":"1300R$",
+      "id":"9",
+      "nomeAluno" : "Emmanuel Cortez",
+      "extraFinanceiro" : "Ginastica",
+      "situacaoFinanceiro" : "Matriculado"
     }
   ]
 }
