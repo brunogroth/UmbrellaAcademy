@@ -75,6 +75,7 @@ function init($) {
             method: 'DELETE',
             success: function (result) {
                 alert("Aluno deletado.");
+                location.reload();
             }
         }
         if (confirm("Deletar aluno?")) {
