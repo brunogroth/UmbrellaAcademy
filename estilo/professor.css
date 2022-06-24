@@ -32,7 +32,7 @@
 }
 
 .conteudo .table{
-    background-color: rgba(0, 0, 0, 0.767);
+    background-color: rgb(255, 255, 255);
 }
 
 .btn{
@@ -48,7 +48,12 @@
 
 .table{
     border-radius: 5px;
-    background-color: rgba(202, 187, 187, 0.514);
+    background-color: rgba(255, 255, 255, 0.514);
+}
+
+.tableJSON{
+    background-color: rgba(0, 0, 0, 0.5);
+
 }
 
 .alerta{

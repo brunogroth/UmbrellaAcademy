@@ -120,7 +120,7 @@ function gerarTabela(url){
         //Código de geração da tabela
         var table = document.createElement('table');
         table.setAttribute('id', 'table');
-        table.classList.add('table');
+        table.classList.add('tableJSON');
 
         var tbody = document.createElement('tbody');
 
