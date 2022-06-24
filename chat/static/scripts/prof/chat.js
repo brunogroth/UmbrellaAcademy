@@ -1,4 +1,4 @@
-// Collapsible
+
 var coll = document.getElementsByClassName("collapsible");
 
 for (let i = 0; i < coll.length; i++) {
@@ -33,7 +33,7 @@ function getTime() {
     return time;
 }
 
-// Gets the first message
+// Escreve a primeira mensagem
 function firstBotMessage() {
     let firstMessage = "Olá, sou seu assistente virtual! Como posso te ajudar ? </br> 1 - Emitir calendário de aulas </br> 2 - Suporte técnico para reabrir nota de aluno </br> 3 - Atestados/Afastamento médico </br> 4 - Abrir reclamação do chefe </br> 5 - Outros assuntos"
     document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
@@ -46,7 +46,7 @@ function firstBotMessage() {
 
 firstBotMessage();
 
-// Retrieves the response
+// Devolve resposta
 function getHardResponse(userText) {
     let botResponse = getBotResponse(userText);
     let botHtml = '<p class="botText"><span>' + botResponse + '</span></p>';
@@ -55,7 +55,7 @@ function getHardResponse(userText) {
     document.getElementById("chat-bar-bottom").scrollIntoView(true);
 }
 
-//Gets the text text from the input box and processes it
+//Texto input
 function getResponse() {
     let userText = $("#textInput").val();
 
@@ -75,7 +75,7 @@ function getResponse() {
 
 }
 
-// Handles sending text via button clicks
+//
 function buttonSendText(sampleText) {
     let userHtml = '<p class="userText"><span>' + sampleText + '</span></p>';
 
@@ -83,10 +83,7 @@ function buttonSendText(sampleText) {
     $("#chatbox").append(userHtml);
     document.getElementById("chat-bar-bottom").scrollIntoView(true);
 
-    //Uncomment this if you want the bot to respond to this buttonSendText event
-    // setTimeout(() => {
-    //     getHardResponse(sampleText);
-    // }, 1000)
+  
 }
 
 function sendButton() {
@@ -97,7 +94,7 @@ function heartButton() {
     buttonSendText("Agradecemos por mandar o coração <3!")
 }
 
-// Press enter to send a message
+
 $("#textInput").keypress(function (e) {
     if (e.which == 13) {
         getResponse();
