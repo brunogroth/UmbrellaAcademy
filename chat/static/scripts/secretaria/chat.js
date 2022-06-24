@@ -35,7 +35,8 @@ function getTime() {
 
 // Gets the first message
 function firstBotMessage() {
-    let firstMessage = "Olá, sou seu assistente virtual! </br> 1 - Emitir boleto </br> 2 - Rematrícula </br>"
+
+    let firstMessage = "Olá, sou seu assistente virtual! Como posso te ajudar ? </br> 1 - Emitir consulta de nota dos alunos </br> 2 - Situação dos alunos cadastrados </br> 3 - Outros assuntos"
     document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
 
     let time = getTime();
@@ -94,7 +95,7 @@ function sendButton() {
 }
 
 function heartButton() {
-    buttonSendText("Agradecemos por mandar o coração <3!")
+    buttonSendText("Obrigado pelo coração <3!")
 }
 
 // Press enter to send a message

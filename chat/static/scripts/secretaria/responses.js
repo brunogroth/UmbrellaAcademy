@@ -1,19 +1,24 @@
 function getBotResponse(input) {
-    //rock paper scissors
-    if (input == "rock") {
-        return "paper";
-    } else if (input == "paper") {
-        return "scissors";
-    } else if (input == "scissors") {
-        return "rock";
+
+    // Resposta simples
+    if (input == "1") {
+        return "Para exportar consulta de nota dos alunos clique no botão exportar na tela </br>Posso te ajudar em mais alguma questão?</br><strong>Sim/Não</strong>";
+
+    }
+    else if(input == "Sim" || (input == "S") || (input =="s") || input =="sim"){
+        return "1 - Emitir consulta de nota dos alunos </br> 2 - Situação dos alunos cadastrados </br> 3 - Outros assuntos";
+    }
+    else if(input == "Não" || (input == "Nao") || (input =="nao") || (input =="não") || (input =="n") || (input =="N")){
+        return "Ok, estou à disposição";
     }
 
-    // Simple responses
-    if (input == "1") {
-        return "Para obter mais informações sobre boleto ligue 3030-3030";
-    } else if (input == "2") {
-        return "Para rematricula acesse o painel dos responsáveis e clique em <strong>rematricula</strong>";
-    } else {
-        return "Olá Adriana!";
+    else if (input == "2") {
+        return "Não há como reabrir notas de alunos </br>Posso te ajudar em mais alguma questão?</br><strong>Sim/Não</strong>";
+    }
+    else if (input == "3") {
+        return "Para outros assunto favor ir presencial a secretaria </br>Posso te ajudar em mais alguma questão?</br><strong>Sim/Não</strong>";
+    }
+    {
+        return "Não entendi, tente digitar algumas das opções do nosso menu! </br>Posso te ajudar em mais alguma questão?</br><strong>Sim/Não</strong>";
     }
 }
