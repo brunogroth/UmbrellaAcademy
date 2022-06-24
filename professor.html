@@ -9,6 +9,10 @@
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="estilo/styles.css">
     <link rel="stylesheet" href="estilo/stylealuno.css">
+    <link rel="stylesheet" href="estilo/professor.css">
+    <link rel="stylesheet" href="./chat/static/css/chat.css">
+    <link rel="stylesheet" href="./chat/static/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    
    
 
@@ -16,6 +20,53 @@
 </head>
 
 <body>
+
+      <!-- CHAT BAR BLOCK -->
+      <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">Chat Umbrella!
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Tap 'Enter' to send a message">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                    onclick="heartButton()"></i>
+                                <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
     <div class="wrapper">
         <nav class="navbar navbar-expand-lg navbar-light bg-backgmenu">
             <a class="navbar-brand" href="index.html"><img src="img/umbrella.png" width="30px"> Umbrella's Institute</a>
@@ -59,6 +110,7 @@
 
         <div class="conteudo">
             <h1>Portal do Professor</h1>
+            <button onclick="chamada();" class="btn" value="chamada">Chamada</button>
 
             <!--
 
@@ -76,9 +128,10 @@
                 <button class="btn" onclick="aprovacao();" >Aprovações</button>
                 <button onclick="relatorio();" class="btn" value="relatorio">Relatórios</button>
                 <button onclick="conteudo();" class="btn" value="conteudos">Conteúdos</button>
-                <button onclick="chamada();" class="btn" value="chamada">Chamada</button>
+                
                 <button onclick="nota();"class="btn" value="notas">Notas</button>
                 <a href="mailto:rodrigochicora.azevedo@gmail.com" class="btn">Contatar Aluno</a>
+                  -->
 
 
                 <div class="bg-modal" id="modalchamada">
@@ -101,19 +154,19 @@
                                 </tr>
 
                                 <tr>
-                                    <td> Bruno Miguel</td>
+                                    <td> Rodrigo Azevedo</td>
+                                    <td> <input type="checkbox"></td>
+                                    <td> <input type="checkbox"></td>
+                                </tr>
+
+                                <tr>
+                                    <td> Bruno Groth</td>
                                     <td> <input type="checkbox"></td>
                                     <td> <input type="checkbox"></td>
                                 </tr>
 
                                 <tr>
                                     <td> Eduardo Amorin</td>
-                                    <td> <input type="checkbox"></td>
-                                    <td> <input type="checkbox"></td>
-                                </tr>
-
-                                <tr>
-                                    <td> Gabriel Cardon</td>
                                     <td> <input type="checkbox"></td>
                                     <td> <input type="checkbox"></td>
                                 </tr>
@@ -126,7 +179,31 @@
 
 
                                 <tr>
-                                    <td> Rodrigo Azevedo</td>
+                                    <td> Gabriel CArdon</td>
+                                    <td> <input type="checkbox"></td>
+                                    <td> <input type="checkbox"></td>
+                                </tr>
+
+                                <tr>
+                                    <td> Renan Oliveira</td>
+                                    <td> <input type="checkbox"></td>
+                                    <td> <input type="checkbox"></td>
+                                </tr>
+
+                                <tr>
+                                    <td> Douglas Cardoso</td>
+                                    <td> <input type="checkbox"></td>
+                                    <td> <input type="checkbox"></td>
+                                </tr>
+
+                                <tr>
+                                    <td> Thiago Silva</td>
+                                    <td> <input type="checkbox"></td>
+                                    <td> <input type="checkbox"></td>
+                                </tr>
+
+                                <tr>
+                                    <td> Emmanuel Cortez</td>
                                     <td> <input type="checkbox"></td>
                                     <td> <input type="checkbox"></td>
                                 </tr>
@@ -141,14 +218,16 @@
                     </div>
                 </div>
 
-            -->
+          
                 <div class="conteudo mt-5">
-                    <button class="btn" id="btnprofessors">Mostrar Dados Dos Alunos</button>
-                    <button id="btnAPI"></button> 
+                    <button class="btn" class="btnAPI"id="btnprofessors">Mostrar Dados Dos Alunos</button>
+                   
                     <main>
                         <!--Conteúdo inserido pelo código javascript-->
                     </main>
                     <div id="conteudo"></div> <br>
+
+                    
                     
                     <!--
 
@@ -407,6 +486,11 @@
             </div>
 
             -->
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="./chat/static/scripts/prof/responses.js"></script>
+            <script src="./chat/static/scripts/prof/chat.js"></script>
+
 
 <script src="javascript/professor.js"></script>
   <script src="javascript/professor/vanilla.js"></script>

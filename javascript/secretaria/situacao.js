@@ -102,9 +102,11 @@ function gerarTabela(url){
         listaDealunos = alunos;
 
         //Código de geração da tabela
+        var situacao = document.getElementById('situacao');
+
         var table = document.createElement('table');
         table.setAttribute('id', 'table');
-        table.classList.add('table');
+        situacao.classList.add('table');
 
         var tbody = document.createElement('tbody');
 
@@ -192,10 +194,10 @@ function gerarTabela(url){
 
         }
 
-        table.appendChild(tbody);
+        situacao.appendChild(tbody);
 
 
-        main.appendChild(table);
+        situacao.appendChild(table);
 
     })
 }
