@@ -22,7 +22,7 @@ function getBotResponse(input) {
         return "Ops, era pegadinha passe no RH acertar sua demissão </br>Posso te ajudar em mais alguma questão?</br><strong>Sim/Não</strong>";
     }
     else if (input == "5") {
-        return "Para outros assunto favor contatar a secretaria </br>Posso te ajudar em mais alguma questão?</br><strong>Sim/Não</strong>";
+        return "Para outros assuntos favor contatar a secretaria </br>Posso te ajudar em mais alguma questão?</br><strong>Sim/Não</strong>";
     }
     {
         return "Não entendi, tente digitar algumas das opções do nosso menu! </br>Posso te ajudar em mais alguma questão?</br><strong>Sim/Não</strong>";

@@ -35,7 +35,7 @@ function getTime() {
 
 // Gets the first message
 function firstBotMessage() {
-    let firstMessage = "Olá, sou seu assistente virtual! </br> 1 - Emitir boleto </br> 2 - Rematrícula </br>"
+    let firstMessage = "Olá, sou seu assistente virtual! Como posso te ajudar ? </br> 1 - Como encontrar meu calendário de aulas </br> 2 - Apoio com Matrícula em Atividade Extra </br> 3 - Como ver os conteúdos de aula </br> 4 - Outros assuntos"
     document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
 
     let time = getTime();
